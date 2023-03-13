@@ -14,6 +14,8 @@ const App = (): JSX.Element => {
     <NavigationContainer>
       <MyDrawer />
     </NavigationContainer>
+
+
   );
 };
 
