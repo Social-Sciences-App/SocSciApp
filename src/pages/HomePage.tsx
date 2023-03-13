@@ -14,6 +14,11 @@ const HomePage = ({navigation}: any): JSX.Element => {
         title="Go to advising page"
         onPress={() => navigation.navigate('Advising')}
       />
+      <Text>SDASd</Text>
+      <Button
+        title="Go to drawer page"
+        onPress={() => navigation.navigate('Drawer')}
+      />
     </View>
   );
 };
