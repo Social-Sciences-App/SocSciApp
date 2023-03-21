@@ -3,7 +3,8 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Events from '../pages/Events';
 import AdvisingPage from '../pages/AdvisingPage';
 import OfficeHours from '../pages/OfficeHours';
-import BottomTabNavigator from './BottomTabNavigation';
+// import BottomTabNavigator from './BottomTabNavigation';
+import HomePage from '../pages/HomePage';
 
 const Drawer = createDrawerNavigator();
 
@@ -11,8 +12,8 @@ function MyDrawer() {
   return (
     <Drawer.Navigator initialRouteName="Home">
       <Drawer.Screen
-        name="Home Drawer"
-        component={BottomTabNavigator}
+        name="Home"
+        component={HomePage}
         options={{drawerLabel: 'Home'}}
       />
       <Drawer.Screen
