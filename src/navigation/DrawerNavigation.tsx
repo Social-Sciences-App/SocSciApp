@@ -5,6 +5,9 @@ import AdvisingPage from '../pages/AdvisingPage';
 import OfficeHours from '../pages/OfficeHours';
 // import BottomTabNavigator from './BottomTabNavigation';
 import HomePage from '../pages/HomePage';
+import {Text} from 'react-native-paper';
+import {TouchableOpacity} from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 const Drawer = createDrawerNavigator();
 
@@ -22,6 +25,11 @@ function MyDrawer() {
           color: '#096DCA',
         },
         headerTitle: 'SSARC',
+        headerRight: () => (
+          <TouchableOpacity onPress={() => {}}>
+            <MaterialIcons name="search" size={26} />
+          </TouchableOpacity>
+        ),
       }}>
       <Drawer.Screen
         name="Home Drawer"
