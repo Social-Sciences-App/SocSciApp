@@ -10,9 +10,21 @@ const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
   return (
-    <Drawer.Navigator initialRouteName="Home">
+    <Drawer.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: '#F4EA8E',
+        },
+        headerTintColor: '#000',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          color: '#096DCA',
+        },
+        headerTitle: 'SSARC',
+      }}>
       <Drawer.Screen
-        name="Home"
+        name="Home Drawer"
         component={HomePage}
         options={{drawerLabel: 'Home'}}
       />

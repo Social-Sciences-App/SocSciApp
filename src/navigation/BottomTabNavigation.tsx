@@ -1,5 +1,5 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 //import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import EntypoIcon from 'react-native-vector-icons/Entypo';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -7,17 +7,18 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import ProfilePage from '../pages/ProfilePage';
 import MyDrawer from './DrawerNavigation';
 
-const Tab = createBottomTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 function BottomTabNavigator() {
   return (
-    <Tab.Navigator initialRouteName="Home">
+    <Tab.Navigator
+      initialRouteName="Home Tab"
+      barStyle={{backgroundColor: '#F4EA8E'}}>
       <Tab.Screen
-        name="Home"
+        name="Home Tab"
         component={MyDrawer}
         options={{
-          tabBarLabel: 'Home Tab',
-          headerShown: false,
+          tabBarLabel: 'Home',
           tabBarIcon: ({color}) => (
             <EntypoIcon name="home" color={color} size={26} />
           ),
