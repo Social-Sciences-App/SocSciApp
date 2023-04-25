@@ -60,7 +60,7 @@ const HomePage = (): JSX.Element => {
           Sciences. Schedule an appointment with us to gain assistance in your
           post-graduate goals.
         </Text>
-        <TouchableOpacity style={styles.button} onPress={() => {AdvisingPage}}>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
           <Text>Click Here to Schedule an Appointment</Text>
         </TouchableOpacity>
 
@@ -72,15 +72,6 @@ const HomePage = (): JSX.Element => {
           source={require('../static/images/SSARC_Summer_2021_Webinars.png')}
         />
 
-        <Text style={styles.headerTextStyle}>
-            This is additional text to test the scrolling
-        </Text>
-        <Text style={styles.headerTextStyle}>
-            This is additional text to test the scrolling
-        </Text>
-        <Text style={styles.headerTextStyle}>
-              This is additional text to test the scrolling
-        </Text>
 
       </ScrollView>
     </SafeAreaView>
