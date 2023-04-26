@@ -9,6 +9,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import MyDrawer from "../navigation/DrawerNavigation";
+//import SearchBar from '../components/SearchBar';
+import { SearchBar } from '@rneui/base'
 
 const styles = StyleSheet.create({
   container: {
@@ -57,6 +60,7 @@ const SearchPage = (): JSX.Element => {
 
 
         <Text style={styles.headerTextStyle}>Add Search bar, then results after</Text>
+        <SearchBar />
 
 
       </ScrollView>
