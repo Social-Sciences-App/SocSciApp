@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SearchPage = (): JSX.Element => {
+const ClubsPage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -53,10 +53,10 @@ const SearchPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>Search</Text>
+        <Text style={styles.headerTextStyle}>Clubs</Text>
 
+        <Text style={styles.headerTextStyle}>Provide list of clubs and information about each</Text>
 
-        <Text style={styles.headerTextStyle}>Add Search bar, then results after</Text>
 
 
       </ScrollView>
@@ -64,4 +64,4 @@ const SearchPage = (): JSX.Element => {
   );
 };
 
-export default SearchPage;
+export default ClubsPage;

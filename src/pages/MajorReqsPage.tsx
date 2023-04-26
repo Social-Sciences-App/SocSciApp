@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SearchPage = (): JSX.Element => {
+const MajorReqsPage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -53,10 +53,10 @@ const SearchPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>Search</Text>
-
-
-        <Text style={styles.headerTextStyle}>Add Search bar, then results after</Text>
+        <Text style={styles.headerTextStyle}>Major/Minor Requirements</Text>
+        <Text style={styles.headerTextStyle}>A list of every major in the School
+        of Social Sciences and a link to a separate page where course requirements
+        for each are shown.</Text>
 
 
       </ScrollView>
@@ -64,4 +64,4 @@ const SearchPage = (): JSX.Element => {
   );
 };
 
-export default SearchPage;
+export default MajorReqsPage;

@@ -46,6 +46,8 @@ const styles = StyleSheet.create({
 });
 
 const HomePage = (): JSX.Element => {
+
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -53,14 +55,14 @@ const HomePage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>About Us</Text>
+        <Text style={styles.headerTextStyle}>About SSARC</Text>
         <Text style={styles.textStyle}>
           The Social Science Academic Resource Center (SSARC) was established
           over three decades ago to assist students in the School of Social
           Sciences. Schedule an appointment with us to gain assistance in your
           post-graduate goals.
         </Text>
-        <TouchableOpacity style={styles.button} onPress={() => {AdvisingPage}}>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
           <Text>Click Here to Schedule an Appointment</Text>
         </TouchableOpacity>
 
@@ -73,13 +75,13 @@ const HomePage = (): JSX.Element => {
         />
 
         <Text style={styles.headerTextStyle}>
-            This is additional text to test the scrolling
+            This is additional text to test scrolling
         </Text>
         <Text style={styles.headerTextStyle}>
-            This is additional text to test the scrolling
+            This is additional text to test scrolling
         </Text>
         <Text style={styles.headerTextStyle}>
-              This is additional text to test the scrolling
+              This is additional text to test scrolling
         </Text>
 
       </ScrollView>

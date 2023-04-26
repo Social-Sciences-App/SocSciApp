@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SearchPage = (): JSX.Element => {
+const DirectoryPage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -53,10 +53,10 @@ const SearchPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>Search</Text>
+        <Text style={styles.headerTextStyle}>Directory</Text>
+        <Text style={styles.headerTextStyle}>Here is a directory of
+        all Social Sciences staff and faculty, with their emails provided</Text>
 
-
-        <Text style={styles.headerTextStyle}>Add Search bar, then results after</Text>
 
 
       </ScrollView>
@@ -64,4 +64,4 @@ const SearchPage = (): JSX.Element => {
   );
 };
 
-export default SearchPage;
+export default DirectoryPage;
