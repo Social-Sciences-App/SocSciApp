@@ -1,5 +1,13 @@
-import React, {useCallback} from 'react';
-import {createDrawerNavigator} from '@react-navigation/drawer';
+import React from 'react';
+import {
+  useNavigation,
+  NavigationProp,
+  ParamListBase,
+} from '@react-navigation/native';
+import {
+  createDrawerNavigator,
+  DrawerNavigationProp,
+} from '@react-navigation/drawer';
 import Events from '../pages/Events';
 // import AcademicsPage from '../pages/AcademicsPage';
 // import OfficeHours from '../pages/OfficeHours';
@@ -13,22 +21,39 @@ import Notifications from '../pages/Notifications';
 import MajorReqsPage from '../pages/MajorReqsPage';
 import DirectoryPage from '../pages/DirectoryPage';
 import Contact from '../pages/Contact';
+// import {Text} from 'react-native-paper';
 import {TouchableOpacity} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EntypoIcons from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+// import Foundation from 'react-native-vector-icons/Foundation';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
-const Drawer = createDrawerNavigator();
-const HomeHeaderRight = () => (
-  <TouchableOpacity onPress={() => {}}>
-    <MaterialIcons name="search" size={26} />
-  </TouchableOpacity>
-);
-function MyDrawer() {
-  // TODO: Move all components outside of Drawer
+export type RootStackParams = {
+  Home: undefined;
+  Home_Drawer: undefined;
+  Search: undefined;
+  Events: undefined;
+  // Academics: undefined;
+  About: undefined;
+  // OfficeHours: undefined;
+  Clubs: undefined;
+  DAC: undefined;
+  Notifications: undefined;
+  MajorReqs: undefined;
+  Contact: undefined;
+  DirectoryPage: undefined;
+};
 
+const Drawer = createDrawerNavigator<RootStackParams>();
+
+function MyDrawer() {
+  const navigation = useNavigation<DrawerNavigationProp<RootStackParams>>();
+
+  function GoToSearch() {
+    navigation.navigate('Search');
+  }
   return (
     <Drawer.Navigator
       initialRouteName="Home"
@@ -42,10 +67,14 @@ function MyDrawer() {
           color: '#096DCA',
         },
         headerTitle: 'SSARC',
-        headerRight: HomeHeaderRight,
+        headerRight: () => (
+          <TouchableOpacity onPress={GoToSearch}>
+            <MaterialIcons name="search" size={26} />
+          </TouchableOpacity>
+        ),
       }}>
       <Drawer.Screen
-        name="Home Drawer"
+        name="Home_Drawer"
         component={HomePage}
         options={{
           drawerLabel: 'Home',
@@ -54,16 +83,15 @@ function MyDrawer() {
           ),
         }}
       />
-      {/*<Drawer.Screen*/}
-      {/*  name="Advising"*/}
-      {/*  component={AcademicsPage}*/}
-      {/*  options={{*/}
-      {/*    drawerLabel: 'Academics',*/}
-      {/*    drawerIcon: ({color}) => (*/}
-      {/*      <Foundation name="clipboard-pencil" color={color} size={26} />*/}
-      {/*    ),*/}
-      {/*  }}*/}
-      {/*/>*/}
+      {/* <Drawer.Screen
+        name="Advising"
+        component={AcademicsPage}
+        options={{drawerLabel: 'Academics',
+            drawerIcon: ({color}) => (
+                <Foundation name="clipboard-pencil" color={color} size={26} />
+            )
+        }}
+      /> */}
       <Drawer.Screen
         name="Events"
         component={Events}
@@ -78,9 +106,20 @@ function MyDrawer() {
         name="Search"
         component={SearchPage}
         options={{
+          drawerItemStyle: {display: 'none'},
           drawerLabel: 'Search',
           drawerIcon: ({color}) => (
             <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="About"
+        component={AboutPage}
+        options={{
+          drawerLabel: 'About Us',
+          drawerIcon: ({color}) => (
+            <Ionicons name="people-sharp" color={color} size={26} />
           ),
         }}
       />
@@ -147,17 +186,6 @@ function MyDrawer() {
           drawerLabel: 'Contact',
           drawerIcon: ({color}) => (
             <AntDesign name="contacts" color={color} size={26} />
-          ),
-        }}
-      />
-
-      <Drawer.Screen
-        name="About"
-        component={AboutPage}
-        options={{
-          drawerLabel: 'About Us',
-          drawerIcon: ({color}) => (
-            <Ionicons name="people-sharp" color={color} size={26} />
           ),
         }}
       />
