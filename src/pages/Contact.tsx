@@ -54,11 +54,10 @@ const Contact = (): JSX.Element => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Contact</Text>
-        <Text style={styles.headerTextStyle}>Contact information for
-        the School of Social Sciences will be provided here.</Text>
-
-
-
+        <Text style={styles.headerTextStyle}>
+          Contact information for the School of Social Sciences will be provided
+          here.
+        </Text>
       </ScrollView>
     </SafeAreaView>
   );

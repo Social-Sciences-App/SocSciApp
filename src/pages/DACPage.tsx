@@ -46,8 +46,6 @@ const styles = StyleSheet.create({
 });
 
 const DACPage = (): JSX.Element => {
-
-
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -55,17 +53,21 @@ const DACPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>About DAC (Dean's Ambassadors Council)</Text>
-        <Text style={styles.textStyle}>
-          Representing the UCI School of Social Sciences undergraduate students, we strive to promote meaningful interactions between students, faculty, and staff. We aim to give back to the Social Sciences community by building an inclusive environment for students. Our efforts focus on bringing the School together through various programs including community service projects and academic engagement opportunities. In addition, the Council operates as the first in-line for assisting in schoolwide events and functions.
-
-          Interested in representing our school? The Dean’s Ambassadors Council will be accepting applications for the 2023-2024 academic year in spring 2023.
-
+        <Text style={styles.headerTextStyle}>
+          About DAC (Dean's Ambassadors Council)
         </Text>
-
-
-
-
+        <Text style={styles.textStyle}>
+          Representing the UCI School of Social Sciences undergraduate students,
+          we strive to promote meaningful interactions between students,
+          faculty, and staff. We aim to give back to the Social Sciences
+          community by building an inclusive environment for students. Our
+          efforts focus on bringing the School together through various programs
+          including community service projects and academic engagement
+          opportunities. In addition, the Council operates as the first in-line
+          for assisting in schoolwide events and functions. Interested in
+          representing our school? The Dean’s Ambassadors Council will be
+          accepting applications for the 2023-2024 academic year in spring 2023.
+        </Text>
       </ScrollView>
     </SafeAreaView>
   );

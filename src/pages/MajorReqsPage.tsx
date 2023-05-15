@@ -54,11 +54,10 @@ const MajorReqsPage = (): JSX.Element => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Major/Minor Requirements</Text>
-        <Text style={styles.headerTextStyle}>A list of every major in the School
-        of Social Sciences and a link to a separate page where course requirements
-        for each are shown.</Text>
-
-
+        <Text style={styles.headerTextStyle}>
+          A list of every major in the School of Social Sciences and a link to a
+          separate page where course requirements for each are shown.
+        </Text>
       </ScrollView>
     </SafeAreaView>
   );

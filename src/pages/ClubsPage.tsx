@@ -55,10 +55,9 @@ const ClubsPage = (): JSX.Element => {
         />
         <Text style={styles.headerTextStyle}>Clubs</Text>
 
-        <Text style={styles.headerTextStyle}>Provide list of clubs and information about each</Text>
-
-
-
+        <Text style={styles.headerTextStyle}>
+          Provide list of clubs and information about each
+        </Text>
       </ScrollView>
     </SafeAreaView>
   );

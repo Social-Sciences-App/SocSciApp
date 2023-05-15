@@ -54,11 +54,10 @@ const DirectoryPage = (): JSX.Element => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Directory</Text>
-        <Text style={styles.headerTextStyle}>Here is a directory of
-        all Social Sciences staff and faculty, with their emails provided</Text>
-
-
-
+        <Text style={styles.headerTextStyle}>
+          Here is a directory of all Social Sciences staff and faculty, with
+          their emails provided
+        </Text>
       </ScrollView>
     </SafeAreaView>
   );

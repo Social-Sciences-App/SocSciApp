@@ -54,11 +54,10 @@ const Notifications = (): JSX.Element => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Notifications</Text>
-        <Text style={styles.headerTextStyle}>Nofications regarding upcoming
-        UCI SS school events will appear here.
+        <Text style={styles.headerTextStyle}>
+          Notifications regarding upcoming UCI SS school events will appear
+          here.
         </Text>
-
-
       </ScrollView>
     </SafeAreaView>
   );
