@@ -52,14 +52,23 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>UIAppFonts</key>
-	<array>
-		<string>fonts/FontAwesome.ttf</string>
-		<string>fonts/Ionicons.ttf</string>
-		<string>fonts/Foundation.ttf</string>
-		<string>fonts/MaterialCommunityIcons.ttf</string>
-		<string>fonts/MaterialIcons.ttf</string>
-		<string>fonts/Entypo.ttf</string>
-		<string>fonts/EvilIcons.ttf</string>
-	</array>
+    <array>
+        <string>AntDesign.ttf</string>
+        <string>Entypo.ttf</string>
+        <string>EvilIcons.ttf</string>
+        <string>Feather.ttf</string>
+        <string>FontAwesome.ttf</string>
+        <string>FontAwesome5_Brands.ttf</string>
+        <string>FontAwesome5_Regular.ttf</string>
+        <string>FontAwesome5_Solid.ttf</string>
+        <string>Fontisto.ttf</string>
+        <string>Foundation.ttf</string>
+        <string>Ionicons.ttf</string>
+        <string>MaterialCommunityIcons.ttf</string>
+        <string>MaterialIcons.ttf</string>
+        <string>Octicons.ttf</string>
+        <string>SimpleLineIcons.ttf</string>
+        <string>Zocial.ttf</string>
+    </array>
 </dict>
 </plist>
