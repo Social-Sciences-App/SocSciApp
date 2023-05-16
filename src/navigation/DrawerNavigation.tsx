@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  useNavigation,
-  NavigationProp,
-  ParamListBase,
-} from '@react-navigation/native';
-import {
-  createDrawerNavigator,
-  DrawerNavigationProp,
-} from '@react-navigation/drawer';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import Events from '../pages/Events';
 // import AcademicsPage from '../pages/AcademicsPage';
 // import OfficeHours from '../pages/OfficeHours';
@@ -22,7 +14,7 @@ import MajorReqsPage from '../pages/MajorReqsPage';
 import DirectoryPage from '../pages/DirectoryPage';
 import Contact from '../pages/Contact';
 // import {Text} from 'react-native-paper';
-import {TouchableOpacity} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EntypoIcons from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -48,30 +40,58 @@ export type RootStackParams = {
 
 const Drawer = createDrawerNavigator<RootStackParams>();
 
-function MyDrawer() {
-  const navigation = useNavigation<DrawerNavigationProp<RootStackParams>>();
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    fontFamily: 'arial',
+    gap: 4,
+  },
 
-  function GoToSearch() {
-    navigation.navigate('Search');
-  }
+  title: {
+    color: '#FFFFFF',
+    fontWeight: '700',
+    lineHeight: 46,
+    fontSize: 40,
+  },
+  school: {
+    color: '#FFFFFF',
+    lineHeight: 18,
+    fontSize: 16,
+    fontStyle: 'normal',
+  },
+});
+
+// TODO: Refactor into own file
+const Header = () => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>UCI</Text>
+      <View>
+        <Text style={styles.school}>School of</Text>
+        <Text style={styles.school}>Social Sciences</Text>
+      </View>
+    </SafeAreaView>
+  );
+};
+function MyDrawer() {
+  // TODO: headerTitleAlign does nothing on IOS, someone will need to fix
   return (
     <Drawer.Navigator
       initialRouteName="Home"
       screenOptions={{
+        headerTintColor: '#FFF',
+
         headerStyle: {
-          backgroundColor: '#F4EA8E',
+          backgroundColor: '#0063A4',
         },
-        headerTintColor: '#000',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-          color: '#096DCA',
+        headerTitle: Header,
+        headerTitleAlign: 'center',
+        headerLeftContainerStyle: {
+          alignContent: 'center',
+          marginLeft: 25,
         },
-        headerTitle: 'SSARC',
-        headerRight: () => (
-          <TouchableOpacity onPress={GoToSearch}>
-            <MaterialIcons name="search" size={26} />
-          </TouchableOpacity>
-        ),
       }}>
       <Drawer.Screen
         name="Home_Drawer"
