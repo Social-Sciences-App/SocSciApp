@@ -4,11 +4,14 @@ import {
   Image,
   SafeAreaView,
   ScrollView,
+  SectionList,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
+import EntypoIcon from 'react-native-vector-icons/Entypo';
+import { FlatList } from 'react-native-gesture-handler';
 
 const styles = StyleSheet.create({
   container: {
@@ -43,23 +46,96 @@ const styles = StyleSheet.create({
     fontSize: 7,
     margin: 40,
   },
+
+  //notification list stuff
+
+  notifBoxView: {
+    flexDirection: "row",
+
+    width:350,
+
+    gap: 5,
+    alignItems: "center",
+    backgroundColor: "darkgrey",
+    borderRadius: 10,
+    overflow: 'hidden',
+    padding: 5,
+  },
+
+  notifText: {
+    textAlign: 'left',
+    padding: 5,
+    flex: 2,
+  },
+
+  dateText: {
+    textAlign: 'right',
+    fontSize: 15,
+    color: "lightgray",
+    flex: 1,
+  },
+
+  notifSeparator: {
+    padding:5,
+  },
 });
+
+const NOTIFS = [
+  {
+    data: "SSARC App out soon!",
+  },
+  {
+    data: "Alert: Notification!",
+  },
+  {
+    data: "Even more notifications...",
+  },
+]
+
+type ItemProps = {data: string};
+
+const NotifItem = ({data}: ItemProps) => (
+  <View style={styles.notifBoxView}>
+    <EntypoIcon name="home" color={"black"} size={16} />
+    <Text style={styles.notifText}>{data}</Text>
+    <Text style={styles.dateText}>2d</Text>
+  </View>
+);
+
+const NoNotifs = () => (
+    <Text style={styles.headerTextStyle}>Nofications regarding upcoming
+    UCI SS school events will appear here.
+    </Text>
+  
+);
+
+const NotifSeparator = () => (
+  <View style = {styles.notifSeparator}>
+  </View>
+);
+
 
 const Notifications = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <View>
         <Image
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Notifications</Text>
-        <Text style={styles.headerTextStyle}>Nofications regarding upcoming
-        UCI SS school events will appear here.
-        </Text>
+        
 
 
-      </ScrollView>
+      </View>
+
+      <FlatList
+      data={NOTIFS}
+      ListEmptyComponent={NoNotifs}
+      renderItem={({item}) => <NotifItem data={item.data} />}
+      ItemSeparatorComponent={ NotifSeparator}
+    />
+
     </SafeAreaView>
   );
 };
