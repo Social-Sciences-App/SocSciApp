@@ -8,9 +8,6 @@ import ProfilePage from '../pages/ProfilePage';
 //import MyDrawer from './DrawerNavigation';
 
 const SearchBar = () => {
-    return (
-        <view></view>
-
-    );
+  return <view />;
 };
 export default SearchBar;

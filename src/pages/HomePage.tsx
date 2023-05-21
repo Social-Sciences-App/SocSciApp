@@ -46,8 +46,6 @@ const styles = StyleSheet.create({
 });
 
 const HomePage = (): JSX.Element => {
-
-
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -75,15 +73,14 @@ const HomePage = (): JSX.Element => {
         />
 
         <Text style={styles.headerTextStyle}>
-            This is additional text to test scrolling
+          This is additional text to test scrolling
         </Text>
         <Text style={styles.headerTextStyle}>
-            This is additional text to test scrolling
+          This is additional text to test scrolling
         </Text>
         <Text style={styles.headerTextStyle}>
-              This is additional text to test scrolling
+          This is additional text to test scrolling
         </Text>
-
       </ScrollView>
     </SafeAreaView>
   );
