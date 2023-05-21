@@ -68,6 +68,7 @@ const DACPage = (): JSX.Element => {
           representing our school? The Dean’s Ambassadors Council will be
           accepting applications for the 2023-2024 academic year in spring 2023.
         </Text>
+
       </ScrollView>
     </SafeAreaView>
   );

@@ -14,13 +14,23 @@ import MajorReqsPage from '../pages/MajorReqsPage';
 import DirectoryPage from '../pages/DirectoryPage';
 import Contact from '../pages/Contact';
 // import {Text} from 'react-native-paper';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EntypoIcons from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 // import Foundation from 'react-native-vector-icons/Foundation';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+
+import {
+    useNavigation,
+    NavigationProp,
+    ParamListBase,
+} from '@react-navigation/native';
+
+import {
+    DrawerNavigationProp,
+} from '@react-navigation/drawer';
 
 export type RootStackParams = {
   Home: undefined;
@@ -61,22 +71,38 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontStyle: 'normal',
   },
+    search: {
+      color: '#FFFFFF',
+        marginRight: 20
+    }
 });
 
 // TODO: Refactor into own file
 const Header = () => {
+    const navigation = useNavigation<DrawerNavigationProp<RootStackParams>>();
+
+    function GoToHome() {
+        navigation.navigate('Home_Drawer');
+    }
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>UCI</Text>
-      <View>
-        <Text style={styles.school}>School of</Text>
-        <Text style={styles.school}>Social Sciences</Text>
-      </View>
-    </SafeAreaView>
+    <TouchableOpacity style={styles.container} onPress={GoToHome}>
+        <Text style={styles.title}>UCI</Text>
+        <View>
+            <Text style={styles.school}>School of</Text>
+            <Text style={styles.school}>Social Sciences</Text>
+        </View>
+    </TouchableOpacity>
   );
 };
+
+
 function MyDrawer() {
   // TODO: headerTitleAlign does nothing on IOS, someone will need to fix
+    const navigation = useNavigation<DrawerNavigationProp<RootStackParams>>();
+
+    function GoToSearch() {
+        navigation.navigate('Search');
+    }
   return (
     <Drawer.Navigator
       initialRouteName="Home"
@@ -92,6 +118,14 @@ function MyDrawer() {
           alignContent: 'center',
           marginLeft: 25,
         },
+          headerRight: () => (
+                  <TouchableOpacity onPress={GoToSearch}>
+                      <MaterialIcons style={styles.search} name="search" size={26} />
+                  </TouchableOpacity>
+                  )
+
+
+
       }}>
       <Drawer.Screen
         name="Home_Drawer"
@@ -189,7 +223,7 @@ function MyDrawer() {
       />
 
       <Drawer.Screen
-        name="Major & Minor Requirements"
+        name="MajorReqs"
         component={MajorReqsPage}
         options={{
           drawerLabel: 'Major/Minor Reqs',
