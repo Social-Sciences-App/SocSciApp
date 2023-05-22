@@ -6,9 +6,12 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  FlatList,
   TouchableOpacity,
   View,
 } from 'react-native';
+
+const people = require('../assets/directory.json');
 
 const styles = StyleSheet.create({
   container: {
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const DirectoryPage = (): JSX.Element => {
+const Description = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -59,6 +62,30 @@ const DirectoryPage = (): JSX.Element => {
           their emails provided
         </Text>
       </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+const dataArray = Object.values(people);
+const renderItem = ({item}) => (
+  <View>
+    <Text>Name: {item.name}</Text>
+    <Text>Email: {item.email}</Text>
+    <Text>Title: {item.title}</Text>
+    <Text>Department: {item.department}</Text>
+    <Text>Room: {item.room}</Text>
+  </View>
+);
+
+const DirectoryPage = (): JSX.Element => {
+  return (
+    <SafeAreaView>
+      <FlatList
+        data={dataArray}
+        ListHeaderComponent={Description}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={renderItem}
+      />
     </SafeAreaView>
   );
 };
