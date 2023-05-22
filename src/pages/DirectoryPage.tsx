@@ -8,9 +8,11 @@ import {
   Text,
   FlatList,
   TouchableOpacity,
+  Linking,
   View,
+  Button,
 } from 'react-native';
-
+import {Card} from 'react-native-paper';
 const people = require('../assets/directory.json');
 
 const styles = StyleSheet.create({
@@ -46,6 +48,9 @@ const styles = StyleSheet.create({
     fontSize: 7,
     margin: 40,
   },
+  card: {
+    padding: 20,
+  },
 });
 
 const Description = () => {
@@ -68,18 +73,41 @@ const Description = () => {
 
 const dataArray = Object.values(people);
 const renderItem = ({item}) => (
-  <View>
-    <Text>Name: {item.name}</Text>
-    <Text>Email: {item.email}</Text>
-    <Text>Title: {item.title}</Text>
-    <Text>Department: {item.department}</Text>
-    <Text>Room: {item.room}</Text>
+  // <View>
+  //   <Text>Name: {item.name}</Text>
+  //   {/* <Button
+  //     onPress={() => Linking.openURL(`mailto:${item.email}`)}
+  //     title= {item.email}
+  //   /> */}
+  //   <Text>Email / Link: {item.email}</Text>
+  //   <Text>Title: {item.title}</Text>
+  //   <Text>Department: {item.department}</Text>
+  //   <Text>Room: {item.room}</Text>
+  // </View>
+
+  <View style={styles.card}>
+    <Card>
+      <Card.Title
+        title={item.name}
+        subtitle={item.department}
+        // left={LeftContent}
+      />
+      <Card.Content>
+        <Text>{item.title}</Text>
+        <Text>{item.email}</Text>
+        <Text>Room/ Phone Number: {item.room}</Text>
+      </Card.Content>
+      <Card.Actions>
+        {/* <Button>Cancel</Button>
+        <Button>Ok</Button> */}
+      </Card.Actions>
+    </Card>
   </View>
 );
 
 const DirectoryPage = (): JSX.Element => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <FlatList
         data={dataArray}
         ListHeaderComponent={Description}
