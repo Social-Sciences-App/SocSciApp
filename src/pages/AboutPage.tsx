@@ -56,7 +56,7 @@ const AboutPage = (): JSX.Element => {
         <Text style={styles.headerTextStyle}>About Us</Text>
         <Text style={styles.textStyle}>
           This mobile application is a collaboration between UCI School of
-          Social Sciences students, Joshua Ma and Vanshika Gaur, and Computer
+          Social Sciences students, Joshua Ma and Vanshika Gaur (with help from Selena Arjomand), and Computer
           Science 180 (Project in CS) students, Aidan Fitzpatrick, Adithya
           Anandsaikrishnan, Jason Wong, Blake Keeler, and Julian Puffer.
         </Text>

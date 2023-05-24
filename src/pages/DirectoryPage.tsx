@@ -13,6 +13,7 @@ import {
   Button,
 } from 'react-native';
 import {Card} from 'react-native-paper';
+import {SearchBar} from '@rneui/base';
 const people = require('../assets/directory.json');
 
 const styles = StyleSheet.create({
@@ -62,10 +63,8 @@ const Description = () => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Directory</Text>
-        <Text style={styles.headerTextStyle}>
-          Here is a directory of all Social Sciences staff and faculty, with
-          their emails provided
-        </Text>
+
+        <SearchBar/>
       </ScrollView>
     </SafeAreaView>
   );
@@ -107,6 +106,7 @@ const renderItem = ({item}) => (
 
 const DirectoryPage = (): JSX.Element => {
   return (
+
     <SafeAreaView style={styles.container}>
       <FlatList
         data={dataArray}
@@ -114,7 +114,9 @@ const DirectoryPage = (): JSX.Element => {
         keyExtractor={(item, index) => index.toString()}
         renderItem={renderItem}
       />
+
     </SafeAreaView>
+
   );
 };
 
