@@ -82,60 +82,63 @@ const MajorReqsPage = (): JSX.Element => {
           <Text style={styles.text1}>
               {"\n"}
               David J. Frank, Department Chair
-              4107 Social Science Plaza A
-              949-824-1117
-              http://www.sociology.uci.edu/
+              {"\n\n"}4107 Social Science Plaza A
+              {"\n\n"}949-824-1117
+              {"\n\n"}http://www.sociology.uci.edu/
 
-              Sociology involves the study of societies and human groups. It examines social conflict and cooperation, inequality and the social organization of families, communities, workplaces and nations. The program at UCI covers the breadth of the discipline while giving students opportunities to conduct independent research, participate in an Honors Program, and to take advantage of departmental opportunities in such areas as business, economy and organizations; diversity and inequality; global and international sociology; and social problems and public policy. All students take basic courses on social institutions, theory and methods. Students then take more specialized courses such as race and ethnicity, social psychology, sociology of gender, or political sociology. Courses are enriched by ongoing faculty research on such topics as the work and family of immigrants to the U.S., economic change in Asia, the relation between women and men in different social classes and ethnic groups, and attitudes on sexual behavior.
+              {"\n\n"}Sociology involves the study of societies and human groups. It examines social conflict and cooperation, inequality and the social organization of families, communities, workplaces and nations. The program at UCI covers the breadth of the discipline while giving students opportunities to conduct independent research, participate in an Honors Program, and to take advantage of departmental opportunities in such areas as business, economy and organizations; diversity and inequality; global and international sociology; and social problems and public policy. All students take basic courses on social institutions, theory and methods. Students then take more specialized courses such as race and ethnicity, social psychology, sociology of gender, or political sociology. Courses are enriched by ongoing faculty research on such topics as the work and family of immigrants to the U.S., economic change in Asia, the relation between women and men in different social classes and ethnic groups, and attitudes on sexual behavior.
 
-              In addition to developing students’ ability to critically analyze and understand social patterns, the major is relevant to professional careers in education, social work, urban planning, law, business, public health, non-governmental organization, and government service. It also provides training for advanced graduate work in sociology and related fields.
+              {"\n\n"}In addition to developing students’ ability to critically analyze and understand social patterns, the major is relevant to professional careers in education, social work, urban planning, law, business, public health, non-governmental organization, and government service. It also provides training for advanced graduate work in sociology and related fields.
 
 
           </Text>
-
-          <Text>
+          <Text style={styles.text1}>
               Sociology studies patterns of relationships among people, how behavior is shaped by these patterns of relationships, and how conflicts and cooperation among groups affect social structure and effect social change. Sociology majors are introduced to the most important ideas, methods, and findings of sociology in the introductory courses, explore basic subareas of sociology in the lower division courses, and pursue specialized study in the upper-division courses.
 
-              In research and teaching, the Department's faculty emphasize empirical sociological research in such areas as small groups, organizations, work, art, world systems, gender, family, and social networks.
+              {"\n\n"}In research and teaching, the Department's faculty emphasize empirical sociological research in such areas as small groups, organizations, work, art, world systems, gender, family, and social networks.
 
-              All students must meet the University Requirements.
-              All students must meet the School Requirements.
-              Departmental Requirements for the Major
-              School requirements must be met and must include 12 courses (48 units) as specified below:
+              {"\n\n"}All students must meet the University Requirements.
+              {"\n\n"}All students must meet the School Requirements.
+              {"\n\n"}Departmental Requirements for the Major
+              {"\n\n"}School requirements must be met and must include 12 courses (48 units) as specified below:
 
-              A. Complete the following:
-              SOCIOL 1	Introduction to Sociology
-              SOCIOL 2	Globalization and Transnational Sociology
-              or SOCIOL 3	Social Problems
-              B. Complete one course in methods and one in theory:
-              SOCIOL 110	Research Methods
-              SOCIOL 120	Sociological Theory
-              C. Complete one course in research design and implementation:
-              SOCIOL 180A	Sociology Majors Seminar
-              D. Complete seven SOCIOL courses, of which no more than three may be lower-division.
-              E. Complete three additional School of Social Sciences courses, of which no more than one may be lower-division.
-
+              {"\n\n"}A. Complete the following:
+              {"\n\n"}SOCIOL 1	Introduction to Sociology
+              {"\n\n"}SOCIOL 2	Globalization and Transnational Sociology
+              {"\n\n"}or SOCIOL 3	Social Problems
+              {"\n\n"}B. Complete one course in methods and one in theory:
+              {"\n\n"}SOCIOL 110	Research Methods
+              {"\n\n"}SOCIOL 120	Sociological Theory
+              {"\n\n"}C. Complete one course in research design and implementation:
+              {"\n\n"}SOCIOL 180A	Sociology Majors Seminar
+              {"\n\n"}D. Complete seven SOCIOL courses, of which no more than three may be lower-division.
+              {"\n\n"}E. Complete three additional School of Social Sciences courses, of which no more than one may be lower-division.
+          </Text>
+              <Text style={styles.headerTextStyle}>
+                  Sociology Minor Requirements
+              </Text>
+          <Text>
               Sociology Minor Requirements
-              Requirements for the minor are met by taking seven Sociology courses (28 units) as specified below:
+              {"\n\n"}Requirements for the minor are met by taking seven Sociology courses (28 units) as specified below:
 
-              A. Complete the following:
-              SOCIOL 1	Introduction to Sociology
-              SOCIOL 2	Globalization and Transnational Sociology
-              or SOCIOL 3	Social Problems
-              B. Complete one course in methods and one in theory:
-              SOCIOL 110	Research Methods
-              SOCIOL 120	Sociological Theory
-              C. Select three SOCIOL courses, of which no more than two may be lower-division.
-              Lower-Division Courses
-              SOCIOL 2-79 1
-              Upper-Division Courses
-              SOCIOL 112-199 2
-              SOCIOL 121-179 2
-              1
-              Cannot count SOCIOL 2 if used to complete section A., or cannot count SOCIOL 3 if used to complete section A.
+              {"\n\n"}A. Complete the following:
+              {"\n\n"}SOCIOL 1	Introduction to Sociology
+          {"\n\n"}SOCIOL 2	Globalization and Transnational Sociology
+          {"\n\n"}or SOCIOL 3	Social Problems
+          {"\n\n"}B. Complete one course in methods and one in theory:
+          {"\n\n"}SOCIOL 110	Research Methods
+          {"\n\n"}SOCIOL 120	Sociological Theory
+          {"\n\n"}C. Select three SOCIOL courses, of which no more than two may be lower-division.
+          {"\n\n"}Lower-Division Courses
+          {"\n\n"}SOCIOL 2-79 1
+          {"\n\n"}Upper-Division Courses
+          {"\n\n"}SOCIOL 112-199 2
+          {"\n\n"}SOCIOL 121-179 2
+          {"\n\n"}1
+          {"\n\n"}Cannot count SOCIOL 2 if used to complete section A., or cannot count SOCIOL 3 if used to complete section A.
 
-              2
-              SOCIOL 110 and SOCIOL 120 cannot be used to fulfill this requirement.
+          {"\n\n"}2
+          {"\n\n"}SOCIOL 110 and SOCIOL 120 cannot be used to fulfill this requirement.
 
           </Text>
 

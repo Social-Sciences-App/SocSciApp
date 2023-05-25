@@ -64,7 +64,6 @@ const Description = () => {
         />
         <Text style={styles.headerTextStyle}>Directory</Text>
 
-        <SearchBar />
       </ScrollView>
     </SafeAreaView>
   );

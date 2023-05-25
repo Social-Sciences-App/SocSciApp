@@ -43,6 +43,9 @@ const styles = StyleSheet.create({
     fontSize: 7,
     margin: 40,
   },
+  text1: {
+    margin: 12
+  },
 });
 
 const Contact = (): JSX.Element => {
@@ -51,12 +54,21 @@ const Contact = (): JSX.Element => {
       <ScrollView>
         <Image
           style={styles.banner}
-          source={require('../static/images/ssarc_banner.png')}
+          source={require('../static/images/view.jpg')}
         />
-        <Text style={styles.headerTextStyle}>Contact</Text>
-        <Text style={styles.headerTextStyle}>
-          Contact information for the School of Social Sciences will be provided
-          here.
+        <Text style={styles.headerTextStyle}>Mailing Address</Text>
+        <Text style={styles.text1}>
+          3151 Social Science Plaza
+          {"\n\n"}Irvine, CA 92697-5100
+
+          {"\n\n"}Phone:
+          {"\n\n"}949.824.2766
+
+          {"\n\n"}Administrative offices for social sciences can be found in Social & Behavioral Sciences Gateway, 5th Floor.
+
+
+
+
         </Text>
       </ScrollView>
     </SafeAreaView>

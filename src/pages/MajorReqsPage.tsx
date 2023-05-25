@@ -43,8 +43,8 @@ export type RootStackParams = {
   ChicanoLatinoStudies: undefined;
   CognitiveSciences: undefined;
   Economics: undefined;
-  InternationalStudies: undefined;
   LanguageScience: undefined;
+  InternationalStudies: undefined;
   PoliticalScience: undefined;
   Psychology: undefined;
   QuantitativeEconomics: undefined;
@@ -122,12 +122,13 @@ const MajorReqsPage = (): JSX.Element => {
   function GoToEconomics() {
     navigation.navigate('Economics');
   }
-  function GoToInternationalStudies() {
-    navigation.navigate('InternationalStudies');
-  }
   function GoToLanguageScience() {
     navigation.navigate('LanguageScience');
   }
+  function GoToInternationalStudies() {
+    navigation.navigate('InternationalStudies');
+  }
+
   function GoToPoliticalScience() {
     navigation.navigate('PoliticalScience');
   }
@@ -221,7 +222,7 @@ const MajorReqsPage = (): JSX.Element => {
             source={require('../static/images/is_icon.png')}
           />
           <Text>
-            Major in LANGUAGE SCIENCE (B.A.)
+            Major in INTERNATIONAL STUDIES (B.A.)
             {'\n'}
           </Text>
         </TouchableOpacity>
@@ -234,7 +235,7 @@ const MajorReqsPage = (): JSX.Element => {
             source={require('../static/images/langsci_icon.png')}
           />
           <Text>
-            Major in INTERNATIONAL STUDIES (B.A.)
+            Major in LANGUAGE SCIENCE (B.A.)
             {'\n'}
           </Text>
         </TouchableOpacity>

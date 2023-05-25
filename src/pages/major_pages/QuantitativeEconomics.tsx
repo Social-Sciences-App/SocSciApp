@@ -83,32 +83,32 @@ const QuantitativeEconomics = (): JSX.Element => {
               {"\n"}
               The major in quantitative economics prepares students for quantitative careers in finance, business, and law and for graduate studies in the social sciences. Students considering graduate school in economics should complete this major. School requirements must be met and must include 19 courses as specified below.
 
-              Economics 20A-B Basic Micro and Macroeconomics.
-              Mathematics 2A-B and 3A/6G or ICS 6N Calculus I & II,  Mathematics for Economists and Linear Algebra.
-              Economics 105A-B-C Intermediate Quantitative Micro and Macroeconomics.
-              Statistics 120A-B-C Probability and Statistics OR Mathematics 130A-B-C Probability.
-              Economics 123A-B Econometrics I and II.
-              Two Quantitative Economics electives from the following: Economics 107, 109 (when title is "Evolutionary Game Theory"), 116A, 116B, 122CW, 123CW, 124, 129 (when title is "Special Topics in Quantitative Methods"), 131A, and 135.
-              Three additional upper division Economics courses, one of which must be an upper-division Economics writing course.
+              {"\n\n"}Economics 20A-B Basic Micro and Macroeconomics.
+              {"\n\n"}Mathematics 2A-B and 3A/6G or ICS 6N Calculus I & II,  Mathematics for Economists and Linear Algebra.
+              {"\n\n"}Economics 105A-B-C Intermediate Quantitative Micro and Macroeconomics.
+              {"\n\n"}Statistics 120A-B-C Probability and Statistics OR Mathematics 130A-B-C Probability.
+              {"\n\n"}Economics 123A-B Econometrics I and II.
+              {"\n\n"}Two Quantitative Economics electives from the following: Economics 107, 109 (when title is "Evolutionary Game Theory"), 116A, 116B, 122CW, 123CW, 124, 129 (when title is "Special Topics in Quantitative Methods"), 131A, and 135.
+              {"\n\n"}Three additional upper division Economics courses, one of which must be an upper-division Economics writing course.
 
 
-              Students who are double majoring in Quantitative Economics and Mathematics may make the following substitutions:
+              {"\n\n"}Students who are double majoring in Quantitative Economics and Mathematics may make the following substitutions:
 
-              Students may also petition upper-division Mathematics electives for upper-division Economics elective courses. These elective courses may not be used to satisfy their Mathematics major requirements.
-
-
-              PLEASE NOTE: If you are a Mathematics Major with a Concentration in Mathematical Finance, you may not use Econ 135/Math 176, Econ 132A and Econ 134A for your Quantitative Economics major, since they are required for your Mathematics major.
+              {"\n\n"}Students may also petition upper-division Mathematics electives for upper-division Economics elective courses. These elective courses may not be used to satisfy their Mathematics major requirements.
 
 
+              {"\n\n"}PLEASE NOTE: If you are a Mathematics Major with a Concentration in Mathematical Finance, you may not use Econ 135/Math 176, Econ 132A and Econ 134A for your Quantitative Economics major, since they are required for your Mathematics major.
 
-              Professional Learning Outcomes
-              Understand comparative advantage.
-              Use supply and demand curves to analyze the impact of taxes etc. on consumer surplus and market efficiency.
-              Interpret estimates from linear regression models and use these models to test hypothesis and  make forecasts.
-              Be able to use standard software to carry out regression analyses with real data.
-              Understand how to evaluate macroeconomic conditions such as unemployment, inflation, and growth.
-              Understand how monetary policy and fiscal policy can be used to influence short-run macroeconomic conditions.
-              Understand how multivariable calculus techniques can be used to derive key results from mathematical models of economic behavior.
+
+
+              {"\n\n"}Professional Learning Outcomes
+              {"\n\n"}Understand comparative advantage.
+              {"\n\n"}Use supply and demand curves to analyze the impact of taxes etc. on consumer surplus and market efficiency.
+              {"\n\n"}Interpret estimates from linear regression models and use these models to test hypothesis and  make forecasts.
+              {"\n\n"}Be able to use standard software to carry out regression analyses with real data.
+              {"\n\n"}Understand how to evaluate macroeconomic conditions such as unemployment, inflation, and growth.
+              {"\n\n"}Understand how monetary policy and fiscal policy can be used to influence short-run macroeconomic conditions.
+              {"\n\n"}Understand how multivariable calculus techniques can be used to derive key results from mathematical models of economic behavior.
 
           </Text>
 

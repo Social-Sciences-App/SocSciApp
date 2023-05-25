@@ -83,95 +83,98 @@ const InternationalStudies = (): JSX.Element => {
               {"\n"}
               The major in international studies provides an interdisciplinary perspective on global politics, economics, cultures and history. International studies majors acquire twenty-first-century analytical skills and knowledge that will enable them to understand and contribute to shaping the rapidly evolving global community. The degree in international studies prepares students for careers in a variety of fields such as international public policy, international business and finance, international organizations, non-governmental organizations, and academic research and teaching.
 
-              Requirements for the major include a core set of courses: Introduction to Global Studies, Global Cultures and Society, Global Political Ideologies, Global Political Economy, Human Rights and Global Governance, and Global Environmental Issues. Also required is an additional lower-division social science course, and the Global and International Studies Forum. Students also choose both a geographic focus and a global focus to enable them to broaden and deepen areas of knowledge and topics of particular interest. The final requirements are competence in a language other than English and an international experience or approved internship.
+              {"\n\n"}Requirements for the major include a core set of courses: Introduction to Global Studies, Global Cultures and Society, Global Political Ideologies, Global Political Economy, Human Rights and Global Governance, and Global Environmental Issues. Also required is an additional lower-division social science course, and the Global and International Studies Forum. Students also choose both a geographic focus and a global focus to enable them to broaden and deepen areas of knowledge and topics of particular interest. The final requirements are competence in a language other than English and an international experience or approved internship.
 
 
-              UCI General Catalogue
-              Requirements for 2022-2023
-              Requirements for 2021-2022 and Prior Years
-              Degree Check Forms
-              International Studies Degree Check Form (Fall 2019-present)
-              International Studies Degree Check Form (pre-Fall 2019)
+              {"\n\n"}UCI General Catalogue
+              {"\n\n"}Requirements for 2022-2023
+              {"\n\n"}Requirements for 2021-2022 and Prior Years
+              {"\n\n"}Degree Check Forms
+              {"\n\n"}International Studies Degree Check Form (Fall 2019-present)
+              {"\n\n"}International Studies Degree Check Form (pre-Fall 2019)
 
 
-              2021-2022 Requirements for the International Studies Major are as follows:
-              A. Complete the following:
+              {"\n\n"}2021-2022 Requirements for the International Studies Major are as follows:
+              {"\n\n"}A. Complete the following:
 
-              INTL ST 1 Introduction to Global Studies
-              B. Select four from the following courses:
+              {"\n\n"}INTL ST 1 Introduction to Global Studies
+              {"\n\n"}B. Select four from the following courses:
 
-              INTL ST 11 Global Cultures and Society
-              INTL ST 12 Global Political Ideologies
-              INTL ST 15 Global Political Economy
-              INTL ST 16 Human Rights and Global Governance
-              INTL ST 17 Global Environmental Issues
-              C. Select one of the following courses:
+              {"\n\n"}INTL ST 11 Global Cultures and Society
+              {"\n\n"}INTL ST 12 Global Political Ideologies
+              {"\n\n"}INTL ST 15 Global Political Economy
+              {"\n\n"}INTL ST 16 Human Rights and Global Governance
+              {"\n\n"}INTL ST 17 Global Environmental Issues
+              {"\n\n"}C. Select one of the following courses:
 
-              ANTHRO 2A Introduction to Sociocultural Anthropology
-              HISTORY 21A World: Innovations
-              HISTORY 21B World: Empires and Revolutions
-              HISTORY 21C World: Nation, War, and Rights
-              INTL ST 13 Global Economy
-              INTL ST 14 Introduction to International Relations
-              POL SCI 51A Introduction to Politics Around the World
-              SOC SCI 5D US & World Geography
-              SOCIOL 2 Globalization and Transnational Sociology
-              D. Competency in a language other than English.
-              Competency is established by college-level course work equivalent to UCI’s fifth quarter of study (usually 2B).
+              {"\n\n"}ANTHRO 2A Introduction to Sociocultural Anthropology
+              {"\n\n"}HISTORY 21A World: Innovations
+              {"\n\n"}HISTORY 21B World: Empires and Revolutions
+              {"\n\n"}HISTORY 21C World: Nation, War, and Rights
+              {"\n\n"}INTL ST 13 Global Economy
+              {"\n\n"}INTL ST 14 Introduction to International Relations
+              {"\n\n"}POL SCI 51A Introduction to Politics Around the World
+              {"\n\n"}SOC SCI 5D US & World Geography
+              {"\n\n"}SOCIOL 2 Globalization and Transnational Sociology
+              {"\n\n"}D. Competency in a language other than English.
+              {"\n\n"}Competency is established by college-level course work equivalent to UCI’s fifth quarter of study (usually 2B).
 
-              E. Geographic Focus: Two upper-division courses in any one geographic area.
-
-
-              Approved Upper-Division Courses List Fall 2021
-              Approved Upper-Division Courses List Winter 2022
-              Approved Upper-Division Courses List Spring 2022
-              Approved Upper-Division Courses List Summer 2022
-              Approved Upper-Division Courses List Fall 2022
-
-              F. Global Focus: Select five upper-division courses. At least two courses must be from Module A.
-
-              Module A:
-
-              INTL ST 100 Global Trials
-              INTL ST 101A Global Social Movements
-              INTL ST 101B Global Cities and Slums
-              INTL ST 102A Global Refugees and Stateless People
-              INTL ST 103A Case Studies in Global and Planetary Health
-              INTL ST 104A Global Trafficking
-              INTL ST 104BW Global Gender and Sexualities
-              INTL ST 106A Global Political Ecology
-              INTL ST 106B Global Food Environment
-              INTL ST 150 Racism and Global Apartheid
-              INTL ST 163 Global Inequalities
-              Module B:
-
-              Approved Upper-Division Courses List Fall 2021
-              Approved Upper-Division Courses List Winter 2022
-              Approved Upper-Division Courses List Spring 2022
-              Approved Upper-Division Courses List Summer 2022
-              Approved Upper-Division Courses List Fall 2022
-
-              G. Two quarters of INTL ST 183A (Global and International Studies Forum), one quarter of which must be taken during the junior or senior year as a capstone experience
-
-              H. At least one quarter of international experience.
-
-              Internship Opportunities
-
-              Majors are encouraged to study abroad through the Education Abroad Program (EAP) or the International Opportunities Program (IOP), which are available for periods of a quarter, semester, year, or summer. When this is not possible, work overseas (through IOP) or a domestic internship with the UCDC Internship Program, the Washington D.C. Center Program, or the Social Science Internship Program (International Studies 197) with an international focus may be substituted.
+              {"\n\n"}E. Geographic Focus: Two upper-division courses in any one geographic area.
 
 
+              {"\n\n"}Approved Upper-Division Courses List Fall 2021
+              {"\n\n"}Approved Upper-Division Courses List Winter 2022
+              {"\n\n"}Approved Upper-Division Courses List Spring 2022
+              {"\n\n"}Approved Upper-Division Courses List Summer 2022
+              {"\n\n"}Approved Upper-Division Courses List Fall 2022
 
-              UNDERGRADUATE STUDENT AFFAIRS OFFICE
+              {"\n\n"}F. Global Focus: Select five upper-division courses. At least two courses must be from Module A.
 
-              The Student Affairs office can assist you with academic advising, course planning, change of major request, financial aid appeals, course substitutions, and information concerning honors, graduate and professional school, and career and internships.
+              {"\n\n"}Module A:
 
-              Appointments with academic counselors are scheduled for majors in the School of Social Sciences. All others are able to speak with a Peer Advisor at any time.
+              {"\n\n"}INTL ST 100 Global Trials
+              {"\n\n"}INTL ST 101A Global Social Movements
+              {"\n\n"}INTL ST 101B Global Cities and Slums
+              {"\n\n"}INTL ST 102A Global Refugees and Stateless People
+              {"\n\n"}INTL ST 103A Case Studies in Global and Planetary Health
+              {"\n\n"}INTL ST 104A Global Trafficking
+              {"\n\n"}INTL ST 104BW Global Gender and Sexualities
+              {"\n\n"}INTL ST 106A Global Political Ecology
+              {"\n\n"}INTL ST 106B Global Food Environment
+              {"\n\n"}INTL ST 150 Racism and Global Apartheid
+              {"\n\n"}INTL ST 163 Global Inequalities
+              {"\n\n"}Module B:
 
-              For assistance, please contact: socsci@uci.edu or (949) 824-6803.
+              {"\n\n"}Approved Upper-Division Courses List Fall 2021
+              {"\n\n"}Approved Upper-Division Courses List Winter 2022
+              {"\n\n"}Approved Upper-Division Courses List Spring 2022
+              {"\n\n"}Approved Upper-Division Courses List Summer 2022
+              {"\n\n"}Approved Upper-Division Courses List Fall 2022
 
-              Please check the following link for further information: Undergraduate Student Affairs Office Website.
+              {"\n\n"}G. Two quarters of INTL ST 183A (Global and International Studies Forum), one quarter of which must be taken during the junior or senior year as a capstone experience
+
+              {"\n\n"}H. At least one quarter of international experience.
+
+              {"\n\n"}Internship Opportunities
+
+              {"\n\n"}Majors are encouraged to study abroad through the Education Abroad Program (EAP) or the International Opportunities Program (IOP), which are available for periods of a quarter, semester, year, or summer. When this is not possible, work overseas (through IOP) or a domestic internship with the UCDC Internship Program, the Washington D.C. Center Program, or the Social Science Internship Program (International Studies 197) with an international focus may be substituted.
 
 
+
+              {"\n\n"}UNDERGRADUATE STUDENT AFFAIRS OFFICE
+
+              {"\n\n"}The Student Affairs office can assist you with academic advising, course planning, change of major request, financial aid appeals, course substitutions, and information concerning honors, graduate and professional school, and career and internships.
+
+              {"\n\n"}Appointments with academic counselors are scheduled for majors in the School of Social Sciences. All others are able to speak with a Peer Advisor at any time.
+
+              {"\n\n"}For assistance, please contact: socsci@uci.edu or (949) 824-6803.
+
+              {"\n\n"}Please check the following link for further information: Undergraduate Student Affairs Office Website.
+
+
+          </Text>
+          <Text style={styles.headerTextStyle}>
+              International Studies Minor Requirements
           </Text>
 
           <Text>
@@ -179,80 +182,80 @@ const InternationalStudies = (): JSX.Element => {
 
 
 
-              2021-2022 Requirements for the International Studies Minor are as follows:
-              UCI General Catalogue
+              {"\n\n"}2021-2022 Requirements for the International Studies Minor are as follows:
+              {"\n\n"}UCI General Catalogue
 
 
 
-              A. Complete the following:
+              {"\n\n"}A. Complete the following:
 
-              INTL ST 1  Introduction to Global Studies
+              {"\n\n"}INTL ST 1  Introduction to Global Studies
 
-              B. Select one of the following:
+              {"\n\n"}B. Select one of the following:
 
-              INTL ST 11  Global Cultures and Society
+              {"\n\n"}INTL ST 11  Global Cultures and Society
 
-              INTL ST 12  Global Political Ideologies
+              {"\n\n"}INTL ST 12  Global Political Ideologies
 
-              INTL ST 15  Global Political Economy
+              {"\n\n"}INTL ST 15  Global Political Economy
 
-              INTL ST 16  Human Rights and Global Governance
+              {"\n\n"}INTL ST 16  Human Rights and Global Governance
 
-              INTL ST 17  Global Environmental Issues
+              {"\n\n"}INTL ST 17  Global Environmental Issues
 
-              C. Geographic Focus: Two upper-division courses in one geographic area
+              {"\n\n"}C. Geographic Focus: Two upper-division courses in one geographic area
 
-              Approved Upper-Division Courses List Fall 2021
-              Approved Upper-Division Courses List Winter 2022
-              Approved Upper-Division Courses List Spring 2022
-              Approved Upper-Division Courses List Summer 2022
+              {"\n\n"}Approved Upper-Division Courses List Fall 2021
+              {"\n\n"}Approved Upper-Division Courses List Winter 2022
+              {"\n\n"}Approved Upper-Division Courses List Spring 2022
+              {"\n\n"}Approved Upper-Division Courses List Summer 2022
 
-              D. Global Focus: Three upper-division courses. At least one must be from Module A.
+              {"\n\n"}D. Global Focus: Three upper-division courses. At least one must be from Module A.
 
-              Module A:
+              {"\n\n"}Module A:
 
-              INTL ST 100  Global Trials
+              {"\n\n"}INTL ST 100  Global Trials
 
-              INTL ST 101A  Global Social Movements
+              {"\n\n"}INTL ST 101A  Global Social Movements
 
-              INTL ST 101B  Global Cities and Slums
+              {"\n\n"}INTL ST 101B  Global Cities and Slums
 
-              INTL ST 102A  Global Refugees and Stateless People
+              {"\n\n"}INTL ST 102A  Global Refugees and Stateless People
 
-              INTL ST 103A  Case Studies in Global and Planetary Health
+              {"\n\n"}INTL ST 103A  Case Studies in Global and Planetary Health
 
-              INTL ST 104A  Global Trafficking
+              {"\n\n"}INTL ST 104A  Global Trafficking
 
-              INTL ST 104BW  Global Gender and Sexuality
+              {"\n\n"}INTL ST 104BW  Global Gender and Sexuality
 
-              INTL ST 106A  Global Political Ecology
+              {"\n\n"}INTL ST 106A  Global Political Ecology
 
-              INTL ST 106B  Global Food Environment
+              {"\n\n"}INTL ST 106B  Global Food Environment
 
-              INTL ST 150  Racism and Global Apartheid
+              {"\n\n"}INTL ST 150  Racism and Global Apartheid
 
-              INTL ST 163  Global Inequalities
+              {"\n\n"}INTL ST 163  Global Inequalities
 
-              Module B:
+              {"\n\n"}Module B:
 
-              Approved Upper-Division Courses List Fall 2021
-              Approved Upper-Division Courses List Winter 2022
-              Approved Upper-Division Courses List Spring 2022
-              Approved Upper-Division Courses List Summer 2022
+              {"\n\n"}Approved Upper-Division Courses List Fall 2021
+              {"\n\n"}Approved Upper-Division Courses List Winter 2022
+              {"\n\n"}Approved Upper-Division Courses List Spring 2022
+              {"\n\n"}Approved Upper-Division Courses List Summer 2022
 
-              E. One quarter of INTL ST 183A  Global and International Studies Forum
+              {"\n\n"}E. One quarter of INTL ST 183A  Global and International Studies Forum
 
 
 
-              UNDERGRADUATE STUDENT AFFAIRS OFFICE
+              {"\n\n"}UNDERGRADUATE STUDENT AFFAIRS OFFICE
 
-              The Student Affairs office can assist you with academic advising, course planning, change of major request, financial aid appeals, course substitutions, and information concerning honors, graduate and professional school, and career and internships.
+              {"\n\n"}The Student Affairs office can assist you with academic advising, course planning, change of major request, financial aid appeals, course substitutions, and information concerning honors, graduate and professional school, and career and internships.
 
-              Appointments with academic counselors are scheduled for majors in the School of Social Sciences. All others are able to speak with a Peer Advisor at any time.
+              {"\n\n"}Appointments with academic counselors are scheduled for majors in the School of Social Sciences. All others are able to speak with a Peer Advisor at any time.
 
-              For assistance, please contact: socsci@uci.edu or (949) 824-6803.
+              {"\n\n"}For assistance, please contact: socsci@uci.edu or (949) 824-6803.
 
-              Please check the following link for further information: Undergraduate Student Affairs Office Website.
+              {"\n\n"}Please check the following link for further information: Undergraduate Student Affairs Office Website.
 
 
           </Text>
