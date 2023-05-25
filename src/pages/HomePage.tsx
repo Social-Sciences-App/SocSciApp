@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Dimensions,
+  FlatList,
   Image,
   SafeAreaView,
   ScrollView,
@@ -9,11 +10,16 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import {Card} from 'react-native-paper';
+import events from '../assets/sample_events.json';
+import news from '../assets/sample_news.json';
+import EventCard, {EventCardProps} from '../components/EventCard/EventCard';
+import {renderNode} from '@rneui/base';
+import NewsCard from '../components/NewsCard/NewsCard';
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    flex: 1,
   },
   banner: {
     width: Dimensions.get('window').width,
@@ -37,50 +43,65 @@ const styles = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    backgroundColor: '#F6EDA0',
+    backgroundColor: '#F8D447',
     padding: 15,
     borderRadius: 15,
     fontSize: 7,
-    margin: 40,
+    marginVertical: 8,
+    marginHorizontal: 30,
+  },
+  blueText: {
+    color: '#0063A4',
+    fontWeight: 'bold',
+  },
+  heading: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#000000',
+    marginLeft: 10,
+    marginTop: 10,
+    marginBottom: 5,
   },
 });
 
+const createEventList = ({item}) => {
+  const {date, link, title} = item;
+  return <EventCard date={date} link={link} title={title} />;
+};
+
+const NewsList = () => {
+  return (
+    <View>
+      {news.flatMap(({id, date, link, title}) => (
+        <NewsCard key={id} date={date} link={link} title={title} />
+      ))}
+    </View>
+  );
+};
 const HomePage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView nestedScrollEnabled={true}>
         <Image
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>About SSARC</Text>
-        <Text style={styles.textStyle}>
-          The Social Science Academic Resource Center (SSARC) was established
-          over three decades ago to assist students in the School of Social
-          Sciences. Schedule an appointment with us to gain assistance in your
-          post-graduate goals.
-        </Text>
-        <TouchableOpacity style={styles.button} onPress={() => {}}>
-          <Text>Click Here to Schedule an Appointment</Text>
-        </TouchableOpacity>
-
-        <Text style={styles.headerTextStyle}>
-          RSVP to Upcoming SSARC Events
-        </Text>
-        <Image
-          style={styles.flyer}
-          source={require('../static/images/SSARC_Summer_2021_Webinars.png')}
+        <Text style={styles.heading}>Events</Text>
+        <FlatList
+          horizontal={true}
+          data={events}
+          keyExtractor={item => item.id.toString()}
+          renderItem={createEventList}
         />
-
-        <Text style={styles.headerTextStyle}>
-          This is additional text to test scrolling
-        </Text>
-        <Text style={styles.headerTextStyle}>
-          This is additional text to test scrolling
-        </Text>
-        <Text style={styles.headerTextStyle}>
-          This is additional text to test scrolling
-        </Text>
+        <Text style={styles.heading}>News</Text>
+        <NewsList />
+        <Text style={styles.heading}>Advising</Text>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <Text style={styles.blueText}>Academic Advising</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={() => {}}>
+          <Text style={styles.blueText}>Peer Advisors</Text>
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );

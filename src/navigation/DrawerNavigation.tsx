@@ -13,20 +13,26 @@ import Notifications from '../pages/Notifications';
 import MajorReqsPage from '../pages/MajorReqsPage';
 import DirectoryPage from '../pages/DirectoryPage';
 import Contact from '../pages/Contact';
-import Anthropology from '../pages/major_pages/Anthropology'
-import BusinessEconomics from '../pages/major_pages/BusinessEconomics'
-import ChicanoLatinoStudies from '../pages/major_pages/ChicanoLatinoStudies'
-import CognitiveSciences from '../pages/major_pages/CognitiveSciences'
-import Economics from '../pages/major_pages/Economics'
-import InternationalStudies from '../pages/major_pages/InternationalStudies'
-import LanguageScience from '../pages/major_pages/LanguageScience'
-import PoliticalScience from '../pages/major_pages/PoliticalScience'
-import Psychology from '../pages/major_pages/Psychology'
-import QuantitativeEconomics from '../pages/major_pages/QuantitativeEconomics'
-import SocialPolicyPublicService from '../pages/major_pages/SocialPolicyPublicService'
-import Sociology from '../pages/major_pages/Sociology'
+import Anthropology from '../pages/major_pages/Anthropology';
+import BusinessEconomics from '../pages/major_pages/BusinessEconomics';
+import ChicanoLatinoStudies from '../pages/major_pages/ChicanoLatinoStudies';
+import CognitiveSciences from '../pages/major_pages/CognitiveSciences';
+import Economics from '../pages/major_pages/Economics';
+import InternationalStudies from '../pages/major_pages/InternationalStudies';
+import LanguageScience from '../pages/major_pages/LanguageScience';
+import PoliticalScience from '../pages/major_pages/PoliticalScience';
+import Psychology from '../pages/major_pages/Psychology';
+import QuantitativeEconomics from '../pages/major_pages/QuantitativeEconomics';
+import SocialPolicyPublicService from '../pages/major_pages/SocialPolicyPublicService';
+import Sociology from '../pages/major_pages/Sociology';
 // import {Text} from 'react-native-paper';
-import {SafeAreaView, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import EntypoIcons from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -35,14 +41,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import {
-    useNavigation,
-    NavigationProp,
-    ParamListBase,
+  useNavigation,
+  NavigationProp,
+  ParamListBase,
 } from '@react-navigation/native';
 
-import {
-    DrawerNavigationProp,
-} from '@react-navigation/drawer';
+import {DrawerNavigationProp} from '@react-navigation/drawer';
 
 export type RootStackParams = {
   Home: undefined;
@@ -95,30 +99,29 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontStyle: 'normal',
   },
-    search: {
-      color: '#FFFFFF',
-        marginRight: 20
-    }
+  search: {
+    color: '#FFFFFF',
+    marginRight: 20,
+  },
 });
 
 // TODO: Refactor into own file
 const Header = () => {
-    const navigation = useNavigation<DrawerNavigationProp<RootStackParams>>();
+  const navigation = useNavigation<DrawerNavigationProp<RootStackParams>>();
 
-    function GoToHome() {
-        navigation.navigate('Home_Drawer');
-    }
+  function GoToHome() {
+    navigation.navigate('Home_Drawer');
+  }
   return (
     <TouchableOpacity style={styles.container} onPress={GoToHome}>
-        <Text style={styles.title}>UCI</Text>
-        <View>
-            <Text style={styles.school}>School of</Text>
-            <Text style={styles.school}>Social Sciences</Text>
-        </View>
+      <Text style={styles.title}>UCI</Text>
+      <View>
+        <Text style={styles.school}>School of</Text>
+        <Text style={styles.school}>Social Sciences</Text>
+      </View>
     </TouchableOpacity>
   );
 };
-
 
 function MyDrawer() {
   // TODO: headerTitleAlign does nothing on IOS, someone will need to fix
@@ -126,8 +129,9 @@ function MyDrawer() {
     <Drawer.Navigator
       initialRouteName="Home"
       screenOptions={{
+        drawerActiveBackgroundColor: '#D9D9D9',
+        drawerInactiveBackgroundColor: '#FFFFFF',
         headerTintColor: '#FFF',
-
         headerStyle: {
           backgroundColor: '#0063A4',
         },
@@ -136,10 +140,7 @@ function MyDrawer() {
         headerLeftContainerStyle: {
           alignContent: 'center',
           marginLeft: 25,
-        }
-
-
-
+        },
       }}>
       <Drawer.Screen
         name="Home_Drawer"
@@ -196,7 +197,7 @@ function MyDrawer() {
         name="Clubs"
         component={ClubsPage}
         options={{
-            drawerItemStyle: {display: 'none'},
+          drawerItemStyle: {display: 'none'},
           drawerLabel: 'Clubs',
           drawerIcon: ({color}) => (
             <MaterialIcons name="meeting-room" color={color} size={26} />
@@ -258,140 +259,139 @@ function MyDrawer() {
           ),
         }}
       />
-        <Drawer.Screen
-            name="Anthropology"
-            component={Anthropology}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'Anthropology',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
+      <Drawer.Screen
+        name="Anthropology"
+        component={Anthropology}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'Anthropology',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
 
-        <Drawer.Screen
-            name="BusinessEconomics"
-            component={BusinessEconomics}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'BusinessEconomics',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="ChicanoLatinoStudies"
-            component={ChicanoLatinoStudies}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'ChicanoLatinoStudies',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="CognitiveSciences"
-            component={CognitiveSciences}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'CognitiveSciences',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="Economics"
-            component={Economics}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'Economics',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="InternationalStudies"
-            component={InternationalStudies}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'InternationalStudies',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="LanguageScience"
-            component={LanguageScience}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'LanguageScience',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="PoliticalScience"
-            component={PoliticalScience}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'PoliticalScience',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="Psychology"
-            component={Psychology}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'Psychology',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="QuantitativeEconomics"
-            component={QuantitativeEconomics}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'QuantitativeEconomics',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="SocialPolicyPublicService"
-            component={SocialPolicyPublicService}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'SocialPolicyPublicService',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-        <Drawer.Screen
-            name="Sociology"
-            component={Sociology}
-            options={{
-                drawerItemStyle: {display: 'none'},
-                drawerLabel: 'Sociology',
-                drawerIcon: ({color}) => (
-                    <MaterialIcons name="search" color={color} size={26} />
-                ),
-            }}
-        />
-
+      <Drawer.Screen
+        name="BusinessEconomics"
+        component={BusinessEconomics}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'BusinessEconomics',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="ChicanoLatinoStudies"
+        component={ChicanoLatinoStudies}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'ChicanoLatinoStudies',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="CognitiveSciences"
+        component={CognitiveSciences}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'CognitiveSciences',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Economics"
+        component={Economics}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'Economics',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="InternationalStudies"
+        component={InternationalStudies}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'InternationalStudies',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="LanguageScience"
+        component={LanguageScience}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'LanguageScience',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="PoliticalScience"
+        component={PoliticalScience}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'PoliticalScience',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Psychology"
+        component={Psychology}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'Psychology',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="QuantitativeEconomics"
+        component={QuantitativeEconomics}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'QuantitativeEconomics',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="SocialPolicyPublicService"
+        component={SocialPolicyPublicService}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'SocialPolicyPublicService',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Sociology"
+        component={Sociology}
+        options={{
+          drawerItemStyle: {display: 'none'},
+          drawerLabel: 'Sociology',
+          drawerIcon: ({color}) => (
+            <MaterialIcons name="search" color={color} size={26} />
+          ),
+        }}
+      />
     </Drawer.Navigator>
   );
 }
