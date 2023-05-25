@@ -196,6 +196,7 @@ function MyDrawer() {
         name="Clubs"
         component={ClubsPage}
         options={{
+            drawerItemStyle: {display: 'none'},
           drawerLabel: 'Clubs',
           drawerIcon: ({color}) => (
             <MaterialIcons name="meeting-room" color={color} size={26} />

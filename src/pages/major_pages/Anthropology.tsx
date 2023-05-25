@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     textAlign: 'center',
-    padding: 10,
+    padding: 20,
   },
   button: {
     alignItems: 'center',
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center'
     },
     text1: {
-      margin: 15
+      margin: 20
     },
 });
 
@@ -106,7 +106,7 @@ const Anthropology = (): JSX.Element => {
                 <Text>
                 School Requirements must be met and must include 12 courses (48 units) as specified below:
                 </Text>
-            <Text>
+            <Text style={styles.text1}>
 
                 A. Complete the following: E. Select six additional elective courses from the following, four of which must be upper-division:
                 ANTHRO 2A
@@ -227,7 +227,7 @@ const Anthropology = (): JSX.Element => {
 
             </Text>
 
-            <Text>
+            <Text style={styles.text1}>
                 Requirements for the Minor in Anthropology:
                 Requirements for the minor in Anthropology are met by taking seven anthropology courses (28 units) as specified below:
 

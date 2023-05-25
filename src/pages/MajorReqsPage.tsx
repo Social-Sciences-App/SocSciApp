@@ -160,8 +160,7 @@ const MajorReqsPage = (): JSX.Element => {
                 style={styles.majorCardImage}
                 source={require('../static/images/anthro_icon.png')}
             />
-            <Text>Major in
-                ANTHROPOLOGY (B.A.)
+            <Text>Major in Anthropology (B.A.)
                 {'\n'}
             </Text>
         </TouchableOpacity>
@@ -171,8 +170,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/busecon_icon.png')}
               />
-              <Text>Major in
-                  BUSINESS ECONOMICS (B.A.)
+              <Text>Major in Business Economics (B.A.)
                   {'\n'}
               </Text>
           </TouchableOpacity>
@@ -183,8 +181,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/cls_icon.png')}
               />
-              <Text>Major in
-                  CHICANO/LATINO STUDIES (B.A.)
+              <Text>Major in Chicano/Latino Studies (B.A.)
                   {'\n'}
               </Text>
 
@@ -197,8 +194,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/cogsci_icon.png')}
               />
-              <Text>Major in
-                  COGNITIVE SCIENCES (B.S.)
+              <Text>Major in Cognitive Sciences (B.S.)
                   {'\n'}
               </Text>
 
@@ -209,8 +205,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/econ_icon.png')}
               />
-              <Text>Major in
-                  ECONOMICS (B.A.)
+              <Text>Major in Economics (B.A.)
                   {'\n'}
               </Text>
 
@@ -221,8 +216,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/is_icon.png')}
               />
-              <Text>Major in
-                  LANGUAGE SCIENCE (B.A.)
+              <Text>Major in Language Science (B.A.)
                   {'\n'}
               </Text>
 
@@ -233,8 +227,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/langsci_icon.png')}
               />
-              <Text>Major in
-                  INTERNATIONAL STUDIES (B.A.)
+              <Text>Major in International Studies (B.A.)
                   {'\n'}
               </Text>
           </TouchableOpacity>
@@ -244,8 +237,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/polisci_icon.png')}
               />
-              <Text>Major in
-                  POLITICAL SCIENCE (B.A.)
+              <Text>Major in Political Science (B.A.)
                   {'\n'}
               </Text>
 
@@ -256,8 +248,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/psych_icon.png')}
               />
-              <Text>Major in
-                  PSYCHOLOGY (B.A.)
+              <Text>Major in Psychology (B.A.)
                   {'\n'}
               </Text>
 
@@ -268,8 +259,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/quantecon_icon.png')}
               />
-              <Text>Major in
-                  QUANTITATIVE ECONOMICS (B.A.)
+              <Text>Major in Quantitative Economics (B.A.)
                   {'\n'}
               </Text>
 
@@ -280,8 +270,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/spps_icon.png')}
               />
-              <Text>Major in
-                  SOCIAL POLICY & PUBLIC SERVICE (B.A.)
+              <Text>Major in Social Policy & Public Service (B.A.)
                   {'\n'}
               </Text>
 
@@ -292,8 +281,7 @@ const MajorReqsPage = (): JSX.Element => {
                   style={styles.majorCardImage}
                   source={require('../static/images/sociology_icon.png')}
               />
-              <Text>Major in
-                  SOCIOLOGY (B.A.)
+              <Text>Major in Sociology (B.A.)
                   {'\n'}
               </Text>
 
