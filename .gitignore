@@ -68,3 +68,5 @@ ios/SocSciApp.xcodeproj/project.pbxproj
 # .vscode/
 .history/
 ```
+# api keys and such
+.env
