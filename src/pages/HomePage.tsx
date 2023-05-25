@@ -48,18 +48,16 @@ const styles = StyleSheet.create({
 const HomePage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
+      <ScrollView nestedScrollEnabled={true}>
         <Image
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>About SSARC</Text>
-        <Text style={styles.textStyle}>
-          The Social Science Academic Resource Center (SSARC) was established
-          over three decades ago to assist students in the School of Social
-          Sciences. Schedule an appointment with us to gain assistance in your
-          post-graduate goals.
-        </Text>
+        <Text>Events</Text>
+        <ScrollView horizontal={true} nestedScrollEnabled={true} />
+        <Text>News</Text>
+        <Text>Advising</Text>
+        <Text>Calendar</Text>
         <TouchableOpacity style={styles.button} onPress={() => {}}>
           <Text>Click Here to Schedule an Appointment</Text>
         </TouchableOpacity>
@@ -71,16 +69,6 @@ const HomePage = (): JSX.Element => {
           style={styles.flyer}
           source={require('../static/images/SSARC_Summer_2021_Webinars.png')}
         />
-
-        <Text style={styles.headerTextStyle}>
-          This is additional text to test scrolling
-        </Text>
-        <Text style={styles.headerTextStyle}>
-          This is additional text to test scrolling
-        </Text>
-        <Text style={styles.headerTextStyle}>
-          This is additional text to test scrolling
-        </Text>
       </ScrollView>
     </SafeAreaView>
   );

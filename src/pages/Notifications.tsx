@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 import EntypoIcon from 'react-native-vector-icons/Entypo';
-import { FlatList } from 'react-native-gesture-handler';
+import {FlatList} from 'react-native-gesture-handler';
 
 const styles = StyleSheet.create({
   container: {
@@ -50,13 +50,13 @@ const styles = StyleSheet.create({
   //notification list stuff
 
   notifBoxView: {
-    flexDirection: "row",
+    flexDirection: 'row',
 
-    width:350,
+    width: 350,
 
     gap: 5,
-    alignItems: "center",
-    backgroundColor: "darkgrey",
+    alignItems: 'center',
+    backgroundColor: 'darkgrey',
     borderRadius: 10,
     overflow: 'hidden',
     padding: 5,
@@ -71,49 +71,44 @@ const styles = StyleSheet.create({
   dateText: {
     textAlign: 'right',
     fontSize: 15,
-    color: "lightgray",
+    color: 'lightgray',
     flex: 1,
   },
 
   notifSeparator: {
-    padding:5,
+    padding: 5,
   },
 });
 
 const NOTIFS = [
   {
-    data: "SSARC App out soon!",
+    data: 'SSARC App out soon!',
   },
   {
-    data: "Alert: Notification!",
+    data: 'Alert: Notification!',
   },
   {
-    data: "Even more notifications...",
+    data: 'Even more notifications...',
   },
-]
+];
 
 type ItemProps = {data: string};
 
 const NotifItem = ({data}: ItemProps) => (
   <View style={styles.notifBoxView}>
-    <EntypoIcon name="home" color={"black"} size={16} />
+    <EntypoIcon name="home" color={'black'} size={16} />
     <Text style={styles.notifText}>{data}</Text>
     <Text style={styles.dateText}>2d</Text>
   </View>
 );
 
 const NoNotifs = () => (
-    <Text style={styles.headerTextStyle}>Nofications regarding upcoming
-    UCI SS school events will appear here.
-    </Text>
-  
+  <Text style={styles.headerTextStyle}>
+    Nofications regarding upcoming UCI SS school events will appear here.
+  </Text>
 );
 
-const NotifSeparator = () => (
-  <View style = {styles.notifSeparator}>
-  </View>
-);
-
+const NotifSeparator = () => <View style={styles.notifSeparator} />;
 
 const Notifications = (): JSX.Element => {
   return (
@@ -124,18 +119,14 @@ const Notifications = (): JSX.Element => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Notifications</Text>
-        
-
-
       </View>
 
       <FlatList
-      data={NOTIFS}
-      ListEmptyComponent={NoNotifs}
-      renderItem={({item}) => <NotifItem data={item.data} />}
-      ItemSeparatorComponent={ NotifSeparator}
-    />
-
+        data={NOTIFS}
+        ListEmptyComponent={NoNotifs}
+        renderItem={({item}) => <NotifItem data={item.data} />}
+        ItemSeparatorComponent={NotifSeparator}
+      />
     </SafeAreaView>
   );
 };

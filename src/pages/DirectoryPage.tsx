@@ -64,48 +64,53 @@ const Description = () => {
         />
         <Text style={styles.headerTextStyle}>Directory</Text>
 
+        <SearchBar />
       </ScrollView>
     </SafeAreaView>
   );
 };
 
 const dataArray = Object.values(people);
-const renderItem = ({item}) => (
-  // <View>
-  //   <Text>Name: {item.name}</Text>
-  //   {/* <Button
-  //     onPress={() => Linking.openURL(`mailto:${item.email}`)}
-  //     title= {item.email}
-  //   /> */}
-  //   <Text>Email / Link: {item.email}</Text>
-  //   <Text>Title: {item.title}</Text>
-  //   <Text>Department: {item.department}</Text>
-  //   <Text>Room: {item.room}</Text>
-  // </View>
-
-  <View style={styles.card}>
-    <Card>
-      <Card.Title
-        title={item.name}
-        subtitle={item.department}
-        // left={LeftContent}
-      />
-      <Card.Content>
-        <Text>{item.title}</Text>
-        <Text>{item.email}</Text>
-        <Text>Room/ Phone Number: {item.room}</Text>
-      </Card.Content>
-      <Card.Actions>
-        {/* <Button>Cancel</Button>
+const renderItem = ({item}) => {
+  const {title, email} = item;
+  const cleanedEmailSubstring =
+    email.indexOf('mailto:') === 0 ? 'mailto:'.length : 0;
+  const cleanedEmail = email.substring(cleanedEmailSubstring);
+  return (
+    // <View>
+    //   <Text>Name: {item.name}</Text>
+    //   {/* <Button
+    //     onPress={() => Linking.openURL(`mailto:${item.email}`)}
+    //     title= {item.email}
+    //   /> */}
+    //   <Text>Email / Link: {item.email}</Text>
+    //   <Text>Title: {item.title}</Text>
+    //   <Text>Department: {item.department}</Text>
+    //   <Text>Room: {item.room}</Text>
+    // </View>
+    <View style={styles.card}>
+      <Card>
+        <Card.Title
+          title={item.name}
+          subtitle={item.department}
+          // left={LeftContent}
+        />
+        <Card.Content>
+          <Text>{title}</Text>
+          <Text>{cleanedEmail}</Text>
+          {/*<Text>Room/ Phone Number: {item.room}</Text>*/}
+        </Card.Content>
+        <Card.Actions>
+          {/* <Button>Cancel</Button>
         <Button>Ok</Button> */}
-      </Card.Actions>
-    </Card>
-  </View>
-);
+        </Card.Actions>
+      </Card>
+    </View>
+  );
+};
 
 const DirectoryPage = (): JSX.Element => {
   return (
-
     <SafeAreaView style={styles.container}>
       <FlatList
         data={dataArray}
@@ -113,9 +118,7 @@ const DirectoryPage = (): JSX.Element => {
         keyExtractor={(item, index) => index.toString()}
         renderItem={renderItem}
       />
-
     </SafeAreaView>
-
   );
 };
 
