@@ -63,3 +63,8 @@ yarn-error.log
 ios/Podfile.lock
 ios/Podfile
 ios/SocSciApp.xcodeproj/project.pbxproj
+
+# vscode .history/,   .vscode/
+# .vscode/
+.history/
+```

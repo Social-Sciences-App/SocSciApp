@@ -1,19 +1,21 @@
-import React from 'react';
 import {
+  Button,
   Dimensions,
+  FlatList,
   Image,
+  Linking,
   SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
-  FlatList,
   TouchableOpacity,
-  Linking,
   View,
-  Button,
 } from 'react-native';
+
 import {Card} from 'react-native-paper';
+import React from 'react';
 import {SearchBar} from '@rneui/base';
+
 const people = require('../assets/directory.json');
 
 const styles = StyleSheet.create({
@@ -69,7 +71,11 @@ const Description = () => {
   );
 };
 
-const dataArray = Object.values(people);
+// debug
+const MAX_DIRECTORY_ENTRIES = 10;
+
+const dataArray = Object.values(people).slice(0, MAX_DIRECTORY_ENTRIES);
+
 const renderItem = ({item}) => {
   const {title, email} = item;
   const cleanedEmailSubstring =
