@@ -14,6 +14,7 @@ import {
 
 import {Card} from 'react-native-paper';
 import {FlashList} from '@shopify/flash-list';
+import {Platform} from 'react-native';
 import React from 'react';
 // import { PureComponent } from 'react';
 // import { RecyclerListView } from "recyclerlistview/web"
@@ -59,8 +60,6 @@ const styles = StyleSheet.create({
     padding: 20,
   },
 });
-
-
 
 const Description = () => {
   return (
@@ -155,10 +154,15 @@ const DirectoryPage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-      <SearchBar
-          placeholder="Type Here..."
+        <SearchBar
+          // placeholder="Name, department, title, or email"
+          placeholder="Search"
           onChangeText={updateSearch}
           value={search}
+          platform={Platform.OS}
+          // for adding methods from rneui searchbar(?)
+          // ref={search => this.search = search}
+          // onClear={() => this.search.clear()}
         />
         <FlashList
           data={searchResults || dataArray}
