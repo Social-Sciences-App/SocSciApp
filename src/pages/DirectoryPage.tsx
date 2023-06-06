@@ -121,7 +121,7 @@ const renderItem = ({item}) => {
 
 // full list
 const dataArray = Object.values(people);
-const flashListEstimatedItemSize = 164;
+const flashListEstimatedItemSize = Object.values(people).length;
 
 const DirectoryPage = (): JSX.Element => {
   const [search, setSearch] = useState('');
@@ -130,16 +130,26 @@ const DirectoryPage = (): JSX.Element => {
     setSearch(search);
     // // filtering out the full list of people
     // based on the search string
-    const filteredPeople = Object.values(people).filter((person) => {
-      const {name, department, title} = person;
-      const lowerCaseSearch = search.toLowerCase();
-      return (
-        name.toLowerCase().includes(lowerCaseSearch) ||
-        department.toLowerCase().includes(lowerCaseSearch) ||
-        title.toLowerCase().includes(lowerCaseSearch)
-      );
-    });
-    setSearchResults(filteredPeople);
+    const lowerCaseSearch = search.toLowerCase().split(' ');
+    const filteredPeople = dataArray.filter((person) => {
+      const {name, department, title, email} = person;
+      const lowerCaseName = name.toLowerCase();
+      const lowerCaseDepartment = department.toLowerCase();
+      const lowerCaseTitle = title.toLowerCase();
+      const lowerCaseEmail = email.toLowerCase();
+      return lowerCaseSearch.every((searchTerm) => {
+        return (
+          lowerCaseName.includes(searchTerm) ||
+          lowerCaseDepartment.includes(searchTerm) ||
+          lowerCaseTitle.includes(searchTerm) ||
+          lowerCaseEmail.slice('mailto:'.length).includes(searchTerm) ||
+          searchTerm === '' ||
+          searchTerm === ' '
+        );
+      });
+    }, []);
+    setSearchResults(filteredPeople)
+    // console.log(filteredPeople)
   };
 
   return (
