@@ -13,8 +13,12 @@ import {
 } from 'react-native';
 
 import {Card} from 'react-native-paper';
+import {FlashList} from '@shopify/flash-list';
 import React from 'react';
-import {SearchBar} from '@rneui/base';
+// import { PureComponent } from 'react';
+// import { RecyclerListView } from "recyclerlistview/web"
+import {SearchBar} from '@rneui/themed';
+import {useState} from 'react';
 
 const people = require('../assets/directory.json');
 
@@ -56,6 +60,8 @@ const styles = StyleSheet.create({
   },
 });
 
+
+
 const Description = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -65,16 +71,11 @@ const Description = () => {
           source={require('../static/images/ssarc_banner.png')}
         />
         <Text style={styles.headerTextStyle}>Directory</Text>
-
+        {/* <SearchBar /> */}
       </ScrollView>
     </SafeAreaView>
   );
 };
-
-// debug
-const MAX_DIRECTORY_ENTRIES = 10;
-
-const dataArray = Object.values(people).slice(0, MAX_DIRECTORY_ENTRIES);
 
 const renderItem = ({item}) => {
   const {title, email} = item;
@@ -114,15 +115,49 @@ const renderItem = ({item}) => {
   );
 };
 
+// debug due to large list
+// const MAX_DIRECTORY_ENTRIES = 10;
+// const dataArray = Object.values(people).slice(0, MAX_DIRECTORY_ENTRIES);
+
+// full list
+const dataArray = Object.values(people);
+const flashListEstimatedItemSize = 164;
+
 const DirectoryPage = (): JSX.Element => {
+  const [search, setSearch] = useState('');
+  const [searchResults, setSearchResults] = useState('');
+  const updateSearch = (search) => {
+    setSearch(search);
+    // // filtering out the full list of people
+    // based on the search string
+    const filteredPeople = Object.values(people).filter((person) => {
+      const {name, department, title} = person;
+      const lowerCaseSearch = search.toLowerCase();
+      return (
+        name.toLowerCase().includes(lowerCaseSearch) ||
+        department.toLowerCase().includes(lowerCaseSearch) ||
+        title.toLowerCase().includes(lowerCaseSearch)
+      );
+    });
+    setSearchResults(filteredPeople);
+  };
+
   return (
     <SafeAreaView style={styles.container}>
-      <FlatList
-        data={dataArray}
-        ListHeaderComponent={Description}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={renderItem}
-      />
+      <View>
+      <SearchBar
+          placeholder="Type Here..."
+          onChangeText={updateSearch}
+          value={search}
+        />
+        <FlashList
+          data={searchResults || dataArray}
+          ListHeaderComponent={Description}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={renderItem}
+          estimatedItemSize={flashListEstimatedItemSize}
+        />
+      </View>
     </SafeAreaView>
   );
 };
