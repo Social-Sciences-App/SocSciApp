@@ -344,8 +344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "\n";
 		};
 		6A27F8AC2A30215D0029F04D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
