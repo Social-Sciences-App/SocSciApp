@@ -11,10 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		5688CA4976B1A6BED9AC59C2 /* libPods-SocSciApp-SocSciAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 198DFE362C41167FB7F3D698 /* libPods-SocSciApp-SocSciAppTests.a */; };
+		1BCDF45CBE1D5B4F8E5262BE /* libPods-SocSciApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CCCC1BCFD1D812BB8C3CD8 /* libPods-SocSciApp.a */; };
 		5768A13029C94ABF00E37947 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5768A12E29C9350300E37947 /* fonts */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E3BA6A65C2C7BDE34C715E17 /* libPods-SocSciApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE60BC6F2EF4234FAC2BB83 /* libPods-SocSciApp.a */; };
+		C50EE5C1E34AC590A410245D /* libPods-SocSciApp-SocSciAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0A0FCC2CA0DF4FA9DFB55C /* libPods-SocSciApp-SocSciAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +37,15 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SocSciApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SocSciApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SocSciApp/main.m; sourceTree = "<group>"; };
-		178F8C39E122880BA741A04A /* Pods-SocSciApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp.release.xcconfig"; path = "Target Support Files/Pods-SocSciApp/Pods-SocSciApp.release.xcconfig"; sourceTree = "<group>"; };
-		198DFE362C41167FB7F3D698 /* libPods-SocSciApp-SocSciAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocSciApp-SocSciAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EE60BC6F2EF4234FAC2BB83 /* libPods-SocSciApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocSciApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		304FFCEA4F73591DBCDB1A3D /* Pods-SocSciApp-SocSciAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp-SocSciAppTests.release.xcconfig"; path = "Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		36C38832913B1938AD86DA1C /* Pods-SocSciApp-SocSciAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp-SocSciAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5768A12E29C9350300E37947 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		75420CECE3E5507ED0F4F527 /* Pods-SocSciApp-SocSciAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp-SocSciAppTests.release.xcconfig"; path = "Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SocSciApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F7F922CF96C5907B2307B4E /* Pods-SocSciApp-SocSciAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp-SocSciAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C4429A95490C114AE4DE4FC5 /* Pods-SocSciApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp.debug.xcconfig"; path = "Target Support Files/Pods-SocSciApp/Pods-SocSciApp.debug.xcconfig"; sourceTree = "<group>"; };
+		85CCCC1BCFD1D812BB8C3CD8 /* libPods-SocSciApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocSciApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D40D98DDA783EC83241587 /* Pods-SocSciApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp.release.xcconfig"; path = "Target Support Files/Pods-SocSciApp/Pods-SocSciApp.release.xcconfig"; sourceTree = "<group>"; };
+		CE0A0FCC2CA0DF4FA9DFB55C /* libPods-SocSciApp-SocSciAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SocSciApp-SocSciAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE09DE45096E3057033DE0C2 /* Pods-SocSciApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocSciApp.debug.xcconfig"; path = "Target Support Files/Pods-SocSciApp/Pods-SocSciApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5688CA4976B1A6BED9AC59C2 /* libPods-SocSciApp-SocSciAppTests.a in Frameworks */,
+				C50EE5C1E34AC590A410245D /* libPods-SocSciApp-SocSciAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3BA6A65C2C7BDE34C715E17 /* libPods-SocSciApp.a in Frameworks */,
+				1BCDF45CBE1D5B4F8E5262BE /* libPods-SocSciApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1EE60BC6F2EF4234FAC2BB83 /* libPods-SocSciApp.a */,
-				198DFE362C41167FB7F3D698 /* libPods-SocSciApp-SocSciAppTests.a */,
+				85CCCC1BCFD1D812BB8C3CD8 /* libPods-SocSciApp.a */,
+				CE0A0FCC2CA0DF4FA9DFB55C /* libPods-SocSciApp-SocSciAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C4429A95490C114AE4DE4FC5 /* Pods-SocSciApp.debug.xcconfig */,
-				178F8C39E122880BA741A04A /* Pods-SocSciApp.release.xcconfig */,
-				9F7F922CF96C5907B2307B4E /* Pods-SocSciApp-SocSciAppTests.debug.xcconfig */,
-				75420CECE3E5507ED0F4F527 /* Pods-SocSciApp-SocSciAppTests.release.xcconfig */,
+				EE09DE45096E3057033DE0C2 /* Pods-SocSciApp.debug.xcconfig */,
+				94D40D98DDA783EC83241587 /* Pods-SocSciApp.release.xcconfig */,
+				36C38832913B1938AD86DA1C /* Pods-SocSciApp-SocSciAppTests.debug.xcconfig */,
+				304FFCEA4F73591DBCDB1A3D /* Pods-SocSciApp-SocSciAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SocSciAppTests" */;
 			buildPhases = (
-				401853F9E2E390023D6113C4 /* [CP] Check Pods Manifest.lock */,
+				99733697D005CD2CE3AED98C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				6B073DCC32EA06564B946353 /* [CP] Embed Pods Frameworks */,
-				E6F61B77456AAB3881FAC1CC /* [CP] Copy Pods Resources */,
+				E69CE29DE8E3D576BC399273 /* [CP] Embed Pods Frameworks */,
+				06E4E412FC739DD49AAA1976 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,14 +179,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SocSciApp" */;
 			buildPhases = (
-				AF0D298E4A5775C80E901439 /* [CP] Check Pods Manifest.lock */,
+				016CFB7AF1D0360AE6C133D2 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C2339B84A525D598F55E6F37 /* [CP] Embed Pods Frameworks */,
-				D98070CCC153BF78E9D49DD1 /* [CP] Copy Pods Resources */,
+				700210B4E00930DB3E2393CB /* [CP] Embed Pods Frameworks */,
+				E3C42E134E92F90D2F6AF31E /* [CP] Copy Pods Resources */,
+				6A27F8AB2A301B890029F04D /* ShellScript */,
+				6A27F8AC2A30215D0029F04D /* ShellScript */,
+				6A1D1DFB2A3022D3006B2861 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -270,46 +273,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		401853F9E2E390023D6113C4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SocSciApp-SocSciAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B073DCC32EA06564B946353 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF0D298E4A5775C80E901439 /* [CP] Check Pods Manifest.lock */ = {
+		016CFB7AF1D0360AE6C133D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,7 +295,76 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C2339B84A525D598F55E6F37 /* [CP] Embed Pods Frameworks */ = {
+		06E4E412FC739DD49AAA1976 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1D1DFB2A3022D3006B2861 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		6A27F8AB2A301B890029F04D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		6A27F8AC2A30215D0029F04D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		700210B4E00930DB3E2393CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,7 +381,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocSciApp/Pods-SocSciApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D98070CCC153BF78E9D49DD1 /* [CP] Copy Pods Resources */ = {
+		99733697D005CD2CE3AED98C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocSciApp-SocSciAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C42E134E92F90D2F6AF31E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,21 +420,21 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocSciApp/Pods-SocSciApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E6F61B77456AAB3881FAC1CC /* [CP] Copy Pods Resources */ = {
+		E69CE29DE8E3D576BC399273 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SocSciApp-SocSciAppTests/Pods-SocSciApp-SocSciAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -434,9 +489,10 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F7F922CF96C5907B2307B4E /* Pods-SocSciApp-SocSciAppTests.debug.xcconfig */;
+			baseConfigurationReference = 36C38832913B1938AD86DA1C /* Pods-SocSciApp-SocSciAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BR5AU58Y39;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -461,10 +517,11 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75420CECE3E5507ED0F4F527 /* Pods-SocSciApp-SocSciAppTests.release.xcconfig */;
+			baseConfigurationReference = 304FFCEA4F73591DBCDB1A3D /* Pods-SocSciApp-SocSciAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = BR5AU58Y39;
 				INFOPLIST_FILE = SocSciAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,13 +542,14 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4429A95490C114AE4DE4FC5 /* Pods-SocSciApp.debug.xcconfig */;
+			baseConfigurationReference = EE09DE45096E3057033DE0C2 /* Pods-SocSciApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J84RJL837B;
+				DEVELOPMENT_TEAM = BR5AU58Y39;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "i386 arm64";
 				INFOPLIST_FILE = SocSciApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,12 +572,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 178F8C39E122880BA741A04A /* Pods-SocSciApp.release.xcconfig */;
+			baseConfigurationReference = 94D40D98DDA783EC83241587 /* Pods-SocSciApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J84RJL837B;
+				DEVELOPMENT_TEAM = BR5AU58Y39;
 				INFOPLIST_FILE = SocSciApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,7 +646,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -653,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
