@@ -9,7 +9,7 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-import {Card} from 'react-native-paper';
+import {Card, DataTable} from 'react-native-paper';
 
 const styles = StyleSheet.create({
   container: {
@@ -31,7 +31,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 10,
+      fontSize: 15
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 20,
@@ -74,14 +81,9 @@ const Anthropology = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>Major in Anthropology (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/anthro_icon.png')}
-          />
+        <Text style={styles.mainHeaderTextStyle}>Major in Anthropology (B.A.)</Text>
 
             <Text style={styles.text1}>
-                {"\n"}
                 Our major prepares students to embark on a wide range of careers, to pursue graduate studies, and to continue to learn and achieve in our culturally diverse world. Our curriculum develops students' knowledge and skills, including 1) an understanding of cultural diversity and global relationships, 2) the fundamentals of conducting research and analyzing sources of information through ethnographic and other anthropological techniques, and 3) communication skills in organizing and presenting information in written reports and oral presentations.
 
                 </Text>
@@ -101,39 +103,66 @@ const Anthropology = (): JSX.Element => {
 
               <Text style={styles.headerTextStyle}>
 
-              Departmental Requirements for the Major | General Catalogue
+              Departmental Requirements for the Major
               </Text>
                 <Text>
                 School Requirements must be met and must include 12 courses (48 units) as specified below:
                 </Text>
+            <DataTable>
+                <DataTable.Row>
+                    <DataTable.Cell>A. Complete the following: E. Select six additionalelective courses from the following, four of which must be upper-division:</DataTable.Cell>
+
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2A</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Sociocultural Anthropology</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>B. Select one of the following:</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2B</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Biological Anthropology</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2C</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Archaeology</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2D</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Language and Culture</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>C. Select one of the following:</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2B</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Biological Anthropology</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2C</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Archaeology</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 2D</DataTable.Cell>
+                    <DataTable.Cell>Introduction to Language and Culture</DataTable.Cell>
+                </DataTable.Row>
+                <DataTable.Row>
+                    <DataTable.Cell>ANTHRO 20A-89</DataTable.Cell>
+                    <DataTable.Cell>Any lower-division elective</DataTable.Cell>
+                </DataTable.Row>
+
+
+
+            </DataTable>
+
             <Text style={styles.text1}>
 
-                A. Complete the following: E. Select six additional elective courses from the following, four of which must be upper-division:
-                {"\n\n"}ANTHRO 2A
-                {"\n\n"}Introduction to Sociocultural Anthropology
 
-                {"\n\n"}B. Select one of the following:
-                {"\n\n"}ANTHRO 2B
-                {"\n\n"}Introduction to Biological Anthropology
 
-                {"\n\n"}ANTHRO 2C
-                {"\n\n"}Introduction to Archaeology
 
-                {"\n\n"}ANTHRO 2D
-                {"\n\n"}Introduction to Language and Culture
-
-                {"\n\n"}C. Select one of the following:
-                {"\n\n"}ANTHRO 2B
-                {"\n\n"}Introduction to Biological Anthropology
-
-                {"\n\n"}ANTHRO 2C
-                {"\n\n"}Introduction to Archaeology
-
-                {"\n\n"}ANTHRO 2D
-                {"\n\n"}Introduction to Language and Culture
-
-                {"\n\n"}ANTHRO 20A-89
-                {"\n\n"}Any lower-division elective
+                {"\n\n"}
+                {"\n\n"}
 
                 {"\n\n"}D. Complete the following:
                 {"\n\n"}ANTHRO 100A
