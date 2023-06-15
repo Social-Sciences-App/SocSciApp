@@ -26,6 +26,12 @@ const styles = StyleSheet.create({
     height: 300,
     alignSelf: 'center',
   },
+  mainHeaderTextStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20
+  },
   headerTextStyle: {
     fontWeight: 'bold',
     textAlign: 'center',
@@ -54,7 +60,7 @@ const Events = (): JSX.Element => {
           source={require('../static/images/ssarc_banner.png')}
         />
 
-        <Text style={styles.headerTextStyle}>Events</Text>
+        <Text style={styles.mainHeaderTextStyle}>Events</Text>
         <Text style={styles.headerTextStyle}>
           Calendar of Events for Undergraduate Students
         </Text>

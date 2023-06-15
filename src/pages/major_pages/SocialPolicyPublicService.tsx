@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const SocialPolicyPublicService = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Social Policy & Public Service (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/spps_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Social Policy & Public Service (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               The Social Policy and Public Service program offers a unique opportunity for learning and conducting research in social policy. In particular, the major encourages students to engage in a multidisciplinary perspective when examining social issues. The curriculum addresses pressing social political issues and provides students insights on the effects of inequity, poverty, discrimination, and limited civic and political engagement on society. With three concentrations (governance, education, and health), the program is designed to help students engage questions about economic inequality, educational access and quality, poverty, family structures, health access, and civic participation to cultivate analytic and research skills when addressing social issues.
 
               {"\n\n"}Through a selective curriculum and research training, students are guided to create a strong academic portfolio in preparation for graduate studies or the job force. The degree will prepare students to understand public policy formulation, quantitative and qualitative analysis, organizations and public policy, non-profit management, and leadership.

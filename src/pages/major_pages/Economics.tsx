@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const Economics = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Economics (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/econ_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Economics (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               The economics major is designed for students seeking a broad education applicable to occupations in business, law, and government. School requirements must be met and must include 17 courses as specified below.
 
               {"\n\n"}Economics 20A-B. Basic Micro and Macroeconomics.

@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const ChicanoLatinoStudies = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Chicano/Latino Studies (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/cls_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Chicano/Latino Studies (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               The major in Chicano/Latino Studies is also designed to be flexible to allow students to start at various points in their undergraduate career and to combine, when they wish, with another major. Many students join our major in their 3rd or 4th year. We embed opportunities for conducting your own independent research within our major so all declared majors can carry out a project that is of interest to them. Moreover, many heritage speakers fulfill the Spanish 2A requirement through AP credit in high school or by passing a simple exam offered through the UCI Academic Spanish Testing Center
 
 

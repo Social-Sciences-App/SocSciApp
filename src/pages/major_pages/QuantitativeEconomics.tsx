@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const QuantitativeEconomics = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Quantitative Economics (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/quantecon_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Quantitative Economics (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               The major in quantitative economics prepares students for quantitative careers in finance, business, and law and for graduate studies in the social sciences. Students considering graduate school in economics should complete this major. School requirements must be met and must include 19 courses as specified below.
 
               {"\n\n"}Economics 20A-B Basic Micro and Macroeconomics.

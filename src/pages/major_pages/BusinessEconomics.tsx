@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -74,14 +80,9 @@ const BusinessEconomics = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Business Economics (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/busecon_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Business Economics (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               This major is for students seeking a business orientation in their study of economics. School requirements must be met and must include 20 courses as specified below.
 
               {"\n\n"}Economics 20A-B. Basic Micro and Macroeconomics.
@@ -108,11 +109,7 @@ const BusinessEconomics = (): JSX.Element => {
               {"\n\n"}Understand how monetary policy and fiscal policy can be used to influence short-run macroeconomic conditions.
               {"\n\n"}Understand basic accounting principles and how these relate to economic profit calculations.
 
-
-
           </Text>
-
-
 
 
       </ScrollView>

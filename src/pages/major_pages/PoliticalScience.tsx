@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const PoliticalScience = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Political Science (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/polisci_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Political Science (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               As a political science major at UCI, you explore how politics works at the individual, group, national, and international levels. Students are introduced to the findings and the methods for gathering information about political behavior and political processes. Course work emphasizes the development of analytic thinking and clear writing skills. Upper-division courses are organized around general areas of study, including American society and politics, comparative politics, international relations, public law, and political theory.
 
               {"\n\n"}Students have many opportunities to pursue special topics in political science through independent study courses, field studies, the department’s honors program and internships. Many political science majors participate in such programs as the UC/DC Internship Program, in Washington, D.C. and the University's Education Abroad Program. Political science majors learn how to understand politics and acquire the skills for effective performance in many professional fields.
