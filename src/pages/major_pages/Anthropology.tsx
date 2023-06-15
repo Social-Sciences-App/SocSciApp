@@ -291,6 +291,7 @@ const Anthropology = (): JSX.Element => {
                 {"\n\n"}Minor’s website: https://www.humanities.uci.edu/archaeology/
 
 
+
             </Text>
 
 
