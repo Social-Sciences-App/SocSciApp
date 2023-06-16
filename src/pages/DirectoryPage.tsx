@@ -69,12 +69,16 @@ const styles = StyleSheet.create({
 
 const Description = () => {
   return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView>
-          <Text style={styles.mainHeaderTextStyle}>Directory</Text>
-          {/* <SearchBar /> */}
-        </ScrollView>
-      </SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <Image
+          style={styles.banner}
+          source={require('../static/images/ssarc_banner.png')}
+        />
+        <Text style={styles.headerTextStyle}>Directory</Text>
+
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -125,56 +129,15 @@ const dataArray = Object.values(people);
 const flashListEstimatedItemSize = Object.values(people).length;
 
 const DirectoryPage = (): JSX.Element => {
-  const [search, setSearch] = useState('');
-  const [searchResults, setSearchResults] = useState('');
-  const updateSearch = (search) => {
-    setSearch(search);
-    // // filtering out the full list of people
-    // based on the search string
-    const lowerCaseSearch = search.toLowerCase().split(' ');
-    const filteredPeople = dataArray.filter((person) => {
-      const {name, department, title, email} = person;
-      const lowerCaseName = name.toLowerCase();
-      const lowerCaseDepartment = department.toLowerCase();
-      const lowerCaseTitle = title.toLowerCase();
-      const lowerCaseEmail = email.toLowerCase();
-      return lowerCaseSearch.every((searchTerm) => {
-        return (
-            lowerCaseName.includes(searchTerm) ||
-            lowerCaseDepartment.includes(searchTerm) ||
-            lowerCaseTitle.includes(searchTerm) ||
-            lowerCaseEmail.slice('mailto:'.length).includes(searchTerm) ||
-            searchTerm === '' ||
-            searchTerm === ' '
-        );
-      });
-    }, []);
-    setSearchResults(filteredPeople)
-    // console.log(filteredPeople)
-  };
-
   return (
-      <SafeAreaView style={styles.container}>
-        <View>
-          <SearchBar
-              // placeholder="Name, department, title, or email"
-              placeholder="Search"
-              onChangeText={updateSearch}
-              value={search}
-              platform={Platform.OS}
-              // for adding methods from rneui searchbar(?)
-              // ref={search => this.search = search}
-              // onClear={() => this.search.clear()}
-          />
-          <FlashList
-              data={searchResults || dataArray}
-              ListHeaderComponent={Description}
-              keyExtractor={(item, index) => index.toString()}
-              renderItem={renderItem}
-              estimatedItemSize={flashListEstimatedItemSize}
-          />
-        </View>
-      </SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={dataArray}
+        ListHeaderComponent={Description}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={renderItem}
+      />
+    </SafeAreaView>
   );
 };
 
