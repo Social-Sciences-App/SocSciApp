@@ -31,6 +31,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+  mainHeaderTextStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20
+  },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -44,7 +50,7 @@ const styles = StyleSheet.create({
     margin: 40,
   },
   text1: {
-    margin: 12
+    margin: 20
   },
 });
 
@@ -56,7 +62,7 @@ const Contact = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/view.jpg')}
         />
-        <Text style={styles.headerTextStyle}>Mailing Address</Text>
+        <Text style={styles.mainHeaderTextStyle}>Mailing Address</Text>
         <Text style={styles.text1}>
           3151 Social Science Plaza
           {"\n\n"}Irvine, CA 92697-5100

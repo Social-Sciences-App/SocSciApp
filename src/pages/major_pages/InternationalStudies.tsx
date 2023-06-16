@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,26 +79,12 @@ const InternationalStudies = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in International Studies (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/is_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in International Studies (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               The major in international studies provides an interdisciplinary perspective on global politics, economics, cultures and history. International studies majors acquire twenty-first-century analytical skills and knowledge that will enable them to understand and contribute to shaping the rapidly evolving global community. The degree in international studies prepares students for careers in a variety of fields such as international public policy, international business and finance, international organizations, non-governmental organizations, and academic research and teaching.
 
               {"\n\n"}Requirements for the major include a core set of courses: Introduction to Global Studies, Global Cultures and Society, Global Political Ideologies, Global Political Economy, Human Rights and Global Governance, and Global Environmental Issues. Also required is an additional lower-division social science course, and the Global and International Studies Forum. Students also choose both a geographic focus and a global focus to enable them to broaden and deepen areas of knowledge and topics of particular interest. The final requirements are competence in a language other than English and an international experience or approved internship.
-
-
-              {"\n\n"}UCI General Catalogue
-              {"\n\n"}Requirements for 2022-2023
-              {"\n\n"}Requirements for 2021-2022 and Prior Years
-              {"\n\n"}Degree Check Forms
-              {"\n\n"}International Studies Degree Check Form (Fall 2019-present)
-              {"\n\n"}International Studies Degree Check Form (pre-Fall 2019)
-
 
               {"\n\n"}2021-2022 Requirements for the International Studies Major are as follows:
               {"\n\n"}A. Complete the following:
@@ -177,7 +169,7 @@ const InternationalStudies = (): JSX.Element => {
               International Studies Minor Requirements
           </Text>
 
-          <Text>
+          <Text style={styles.text1}>
               The minor in international studies provides an interdisciplinary perspective on contemporary global issues, societies, and cultures. International studies minors acquire knowledge that will enable them to understand and contribute to shaping the rapidly evolving global community. The minor in international studies helps prepare students for graduate study or professional careers in a variety of fields in the national and international job markets such as international affairs and public policy, international business and finance, international organizations, and academic research and teaching. Requirements for the minor include a core set of courses: an introductory sequence (Global Cultures and Society, Global Politics, World History and Global Economics) and two quarters of the International Studies Public Forum. Students then choose both a regional focus (three upper-division courses on Europe and Eurasia, Africa and the Middle East, the Americas, or Asia) and a functional focus (three upper division courses on Global Security, Conflict and Conflict Resolution, International/Comparative Law, International/Transnational Organizations and Movements, Global Ethics and Human Rights, Global Identities, Global Trade, Investment and Finance, Global Development, Public Health,& Environment, or Global Population, Migration, and Diaspora). Minors in international studies are encouraged to study abroad.
 
 

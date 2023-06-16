@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,16 +79,10 @@ const CognitiveSciences = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Cognitive Sciences (B.S.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/cogsci_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Cognitive Sciences (B.S.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
-              INFORMATION ABOUT THE MAJOR
-              {"\n\n"}The B.S. in Cognitive Sciences is structured to provide students with a challenging introduction to the broad field of Cognitive Sciences that is strongly grounded in theory and an empirical approach emphasizing experimental/computational methods. To ensure an intellectually coherent experience, students in the major are able to choose courses from areas including: (a) Cognitive Neuroscience; (b) Experimental Psychology–Sensation, Perception, Attention, and Memory; (c) Language Science; and (d) Computational Cognitive Science. In addition, students are required to acquire a background in (a) calculus, (b) statistics, (c) introductory computer programming, and (d) some combination of the natural sciences, logic and philosophy of science, linguistics, or more advanced computer science or mathematics.
+              The B.S. in Cognitive Sciences is structured to provide students with a challenging introduction to the broad field of Cognitive Sciences that is strongly grounded in theory and an empirical approach emphasizing experimental/computational methods. To ensure an intellectually coherent experience, students in the major are able to choose courses from areas including: (a) Cognitive Neuroscience; (b) Experimental Psychology–Sensation, Perception, Attention, and Memory; (c) Language Science; and (d) Computational Cognitive Science. In addition, students are required to acquire a background in (a) calculus, (b) statistics, (c) introductory computer programming, and (d) some combination of the natural sciences, logic and philosophy of science, linguistics, or more advanced computer science or mathematics.
 
               {"\n\n"}The Cognitive Science (B.S.) major prepares students for a research career in cognitive science, focusing on any of the current dominant approaches of the field. The study of cognition can be approached though cognitive neuroscience, behavioral experiments, language science, computational and mathematical modeling, or any combination of those. The major combines strong technical skills with deep knowledge of at least one of these approaches.
 

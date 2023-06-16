@@ -75,6 +75,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+  mainHeaderTextStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20
+  },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -151,7 +157,7 @@ const MajorReqsPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>Major/Minor Requirements</Text>
+        <Text style={styles.mainHeaderTextStyle}>Major/Minor Requirements</Text>
 
         <TouchableOpacity style={styles.majorCard} onPress={GoToAnthropology}>
           <Image

@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const LanguageScience = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Language Science (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/langsci_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Language Science (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               Language Science Major:
               {"\n\n"}Description
               {"\n\n"}Curriculum
@@ -358,7 +359,7 @@ const LanguageScience = (): JSX.Element => {
               {"\n\n"}(iii) Complete two language science courses with a grade of B- or better. One of the courses must be in the lower div core courses (LSCI 3, LSCI 10, LSCI 20, LSCI 43, LSCI 51).
           </Text>
               <Text style={styles.headerTextStyle}>Related Minors</Text>
-              <Text>
+              <Text style={styles.text1}>
 
 
               Linguistics Minor at UCI

@@ -120,6 +120,7 @@ const Header = () => {
         <Text style={styles.school}>Social Sciences</Text>
       </View>
     </TouchableOpacity>
+
   );
 };
 

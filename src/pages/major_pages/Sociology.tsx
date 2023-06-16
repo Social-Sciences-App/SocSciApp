@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const MajorReqsPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Sociology (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/sociology_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Sociology (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               David J. Frank, Department Chair
               {"\n\n"}4107 Social Science Plaza A
               {"\n\n"}949-824-1117
@@ -117,7 +118,7 @@ const MajorReqsPage = (): JSX.Element => {
               <Text style={styles.headerTextStyle}>
                   Sociology Minor Requirements
               </Text>
-          <Text>
+          <Text style={styles.text1}>
               Sociology Minor Requirements
               {"\n\n"}Requirements for the minor are met by taking seven Sociology courses (28 units) as specified below:
 

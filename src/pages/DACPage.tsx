@@ -31,6 +31,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+  mainHeaderTextStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20
+  },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -43,6 +49,9 @@ const styles = StyleSheet.create({
     fontSize: 7,
     margin: 40,
   },
+  text1: {
+    margin: 20
+  },
 });
 
 const DACPage = (): JSX.Element => {
@@ -53,10 +62,10 @@ const DACPage = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>
+        <Text style={styles.mainHeaderTextStyle}>
           About DAC (Dean's Ambassadors Council)
         </Text>
-        <Text style={styles.textStyle}>
+        <Text style={styles.text1}>
           Representing the UCI School of Social Sciences undergraduate students,
           we strive to promote meaningful interactions between students,
           faculty, and staff. We aim to give back to the Social Sciences

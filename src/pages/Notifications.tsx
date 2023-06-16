@@ -34,6 +34,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+  mainHeaderTextStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20
+  },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -118,7 +124,7 @@ const Notifications = (): JSX.Element => {
           style={styles.banner}
           source={require('../static/images/ssarc_banner.png')}
         />
-        <Text style={styles.headerTextStyle}>Notifications</Text>
+        <Text style={styles.mainHeaderTextStyle}>Notifications</Text>
       </View>
 
       <FlatList

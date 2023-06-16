@@ -32,6 +32,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+    mainHeaderTextStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 10,
+        fontSize: 20
+    },
   textStyle: {
     textAlign: 'center',
     padding: 10,
@@ -73,14 +79,9 @@ const Psychology = (): JSX.Element => {
           style={styles.banner}
           source={require('../../static/images/ssarc_banner.png')}
         />
-          <Text style={styles.headerTextStyle}>Major in Psychology (B.A.)</Text>
-          <Image
-              style={styles.majorCardImage}
-              source={require('../../static/images/psych_icon.png')}
-          />
+          <Text style={styles.mainHeaderTextStyle}>Major in Psychology (B.A.)</Text>
 
           <Text style={styles.text1}>
-              {"\n"}
               UNDERGRADUATE PROGRAM INFORMATION
               {"\n\n"}The Department of Cognitive Sciences offers the following undergraduate degrees:
 

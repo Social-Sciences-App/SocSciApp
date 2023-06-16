@@ -30,6 +30,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     padding: 10,
   },
+  mainHeaderTextStyle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20
+  },
   textStyle: {
     padding: 20,
     marginTop: -20
@@ -57,7 +63,7 @@ const AboutPage = (): JSX.Element => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
-        <Text style={styles.headerTextStyle}>Message from the Dean</Text>
+        <Text style={styles.mainHeaderTextStyle}>Message from the Dean</Text>
         <Image
           style={styles.banner}
           source={require('../static/images/maurer-half.jpg')}
